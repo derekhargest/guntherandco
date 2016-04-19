@@ -195,7 +195,7 @@
 		width: 20.8%;
 	}
 	.slicknav_btn{
-		padding: 2.8% 5% 0.438em 0.625em;
+		padding: 2.25% 5% 0.438em 0.625em;
 	}
 }
 
@@ -222,24 +222,7 @@
 	}
 }
 
-@media (min-width: 1140px) and (max-width: 1300px){
-	.main-navigation{
-			width: 88.216%;
-	}
-	.site-header-main{
-		padding-top: 45px;
-	}
-	.logo{
-		padding-left: 1em;
-		display: none;
-	}
-	.small-logo.logo{
-		display: table;
-		padding-left: 2.5%;
-		min-width: 0;
-		max-width: 75px !important;
-	}
-}
+
 
 @media (max-width: 1300px){
 
@@ -267,10 +250,24 @@
 }
 
 @media (min-width: 1300px){
-	.logo{
-padding-left: 4.444%;
-padding-right: 5.555%;
+		.logo{
+	padding-left: 4.444%;
+	padding-right: 5.555%;
+	}
 }
+
+@media (min-width: 1287px) and (max-width: 1491px){
+	.logo{
+		padding-right: 0;
+		padding-left: 0;
+		width: 8.7%;
+		padding-left: 2%;
+		min-width: 0;
+		margin-top: 4px;
+	}
+	.main-navigation{
+		width: 87.289%;
+	}
 }
 
 @media (min-width: 468px){
@@ -281,5 +278,24 @@ padding-right: 5.555%;
 					margin: 0 !important;
 				}
 			}
+		}
+	}
+
+	@media (min-width: 1140px) and (max-width: 1300px){
+		.main-navigation{
+				width: 88.216%;
+		}
+		.site-header-main{
+			padding-top: 45px;
+		}
+		.logo{
+			padding-left: 1em;
+			display: none;
+		}
+		.small-logo.logo{
+			display: table;
+			padding-left: 2.5%;
+			min-width: 0;
+			max-width: 75px !important;
 		}
 	}

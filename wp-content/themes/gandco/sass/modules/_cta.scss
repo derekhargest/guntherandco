@@ -33,7 +33,13 @@
 }
 }
 
-@media (min-width: 775px){
+@media (min-width: 585px){
+  .cta-section a span{
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1140px){
   .cta-section a span{
     font-size: 2.5em;
   }
