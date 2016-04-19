@@ -86,7 +86,7 @@
 <script type="text/javascript">
 
 
-	$(document).ready(function(){
+	$(window).load(function(){
 		if($("#banner").length > 0){
 			var height = document.getElementById("banner").offsetHeight;
 			document.getElementById("content-block").style.marginTop = height + 'px';
