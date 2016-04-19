@@ -1,0 +1,52 @@
+#press{
+  background: #f2f2f2;
+  padding-bottom: 4.94444em;
+  .content-container{
+    background: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    @include clearfix;
+    .press-item{
+      padding-left: 4.4%;
+      padding-right: 4.4%;
+      width: 91.2%;
+      margin-bottom: 3.6em;
+      @include clearfix;
+      p{
+        font-size: 2em;
+      }
+      .content-title{
+          font-size: 1.35em;
+      }
+      .read-more{
+        font-weight: 700;
+        font-size: 2em;
+        color: $c-gc_red;
+        text-decoration: none;
+        display: block;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: 450px){
+  #press{
+    padding-top: 3em;
+    .content-container{
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: 1140px){
+  #press{
+    padding-top: 4em;
+    .content-container{
+      margin-top: 0;
+      padding-bottom: 6em;
+      padding-top: 6em;
+    }
+  }
+}

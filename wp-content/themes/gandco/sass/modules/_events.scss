@@ -1,0 +1,70 @@
+.event-item{
+	@include clearfix;
+	margin-bottom: 4.4444em;
+	font-size: .75em;
+	.event-info{
+		@include clearfix;
+		width: 100%;
+	}
+	h3{
+		line-height: 1em;
+		font-size: 2.62em;
+		margin-bottom: 1em;
+	}
+	p{
+		font-size: 2.62em;
+		margin-bottom: 1em;
+		line-height: 1.55em;
+	}
+	span{
+		display: block;
+		float: left;
+		font-size: 2.62em;
+		line-height: 1.55em;
+		margin-right: 2%;
+	}
+	.event-content{
+		margin-top: 3em;
+	}
+	.date{
+		float: left;
+	}
+	.event-content .description{
+		max-width: 480px;
+	}
+}
+
+@media (min-width: 580px){
+	.event-item{
+		font-size: .75em;
+	}
+
+}
+
+@media (min-width: 770px){
+	.event-item{
+		span{
+			margin-right: 10%;
+		}
+		.event-content{
+			@include span(5 of 10 last);
+			float: right;
+			margin-top: 0;
+		}
+		p, span{
+			font-size: 2em;
+		}
+	}
+	.event-image{
+		@include span(4 of 10);
+		margin-right: span(1);
+		float: left;
+	}
+
+}
+
+@media (min-width: 1030px){
+	.event-item{
+		font-size: 1em;
+	}
+}

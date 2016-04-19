@@ -1,0 +1,38 @@
+.button{
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	border: 0;
+	@include clearfix;
+	text-align: center;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+	 color: #fff !important;
+	 font-weight: 700;
+	 font-size: .9em;
+	 text-transform: uppercase;
+	 padding: .5em;
+	 background: transparent;
+	 border: 1px solid #fff;
+	span{
+		margin: 0 auto;
+		float: none;
+		@include clearfix;
+		color: #fff !important;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: .85em;
+		line-height: 3em;
+		border: 0;
+		&::after {
+	    content: '\25ba';
+	    padding-left: 0.75em;
+	    font-size: .65em;
+	  }
+	}
+	&:hover{
+		text-decoration: none;
+		opacity: .85;
+	}
+}

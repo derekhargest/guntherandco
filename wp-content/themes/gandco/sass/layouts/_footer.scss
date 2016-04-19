@@ -1,0 +1,241 @@
+.site-footer{
+  background: #382e26;
+  padding-top: 3em;
+  .container{
+    padding-bottom: 2em;
+  }
+  .footer-item{
+    width: 100%;
+    padding-bottom: 2em;
+    h4{
+      color: #fff;
+      font-size: 1.75em;
+      font-weight: 700;
+      margin-bottom: 1.05em;
+      text-align: center;
+    }
+    p, address, a{
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.65em;
+      text-align: center;
+    }
+    address{
+      line-height: 1.5em;
+    }
+  }
+  .connect{
+    a{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  input{
+  	background: transparent;
+  	font-size: 1.15em;
+  	text-transform: uppercase;
+  	color: #fff;
+  	border: 0;
+  	padding: .5em 0;
+  	border-bottom: 1px solid #fff;
+  	font-weight: 600;
+  	font: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  	-webkit-appearance: none;
+  	letter-spacing: .05em;
+  }
+  .button{
+    border: 1px solid #fff;
+  }
+}
+
+.footer-content.connect{
+    ul li{
+      margin-bottom: .45em;
+      .icon{
+        margin-right: .25em;
+      }
+    }
+}
+
+.footer-content.hours{
+  p{
+    line-height: 1.5em;
+  }
+  .hour{
+    margin-bottom: 1.75em;
+  }
+}
+
+.footer-content.updated{
+  width: 306px;
+  margin: 0 auto;
+  label{
+    text-indent: -99999px;
+    display: block;
+    height: 0px;
+  }
+  input{
+    width: 100%;
+    text-align: center;
+    font-size: 1.35em;
+  }
+  .button{
+    margin-top: 1.2em;
+  }
+}
+.footer-content.address a{
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 1em;
+  font-size: 1.5em;
+  span{
+    margin-right: .5em;
+  }
+}
+.subfooter{
+  width: 100%;
+  background: $c-gc_dark_brown;
+  color: #fff;
+  @include clearfix;
+  padding: 2.5em 0 1.5em 0;
+  p{
+    font-size: 1.15em;
+  }
+  .copy{
+    float: left;
+    width: 100%;
+    text-align: center;
+    p{
+      line-height: 1.5em;
+    }
+
+  }
+  .social{
+    float: none;
+    margin: 0 auto;
+    width: 52%;
+    padding-top: 2em;
+    @include clearfix;
+    ul{
+      margin-top: 2em;
+      li{
+        display: block;
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2em;
+        &:last-child{
+          margin-right: 0;
+        }
+        span {
+          font-size: 32px;
+        }
+
+      }
+    }
+
+   a{
+    color: #fff;
+    text-decoration: none;
+    span{
+      text-indent: -9999px;
+    }
+  }
+  }
+}
+
+
+@media (min-width: 1140px){
+  .footer-content.updated{
+    width: 320px;
+  }
+  .site-footer{
+    padding-top: 6.66666em;
+    .container{
+      padding-bottom: 3.5em;
+    }
+    .footer-item{
+      width: 23%;
+      float: left;
+      margin-right: 2.5539%;
+      padding-bottom: 0;
+      h4{
+        text-align: left;
+        font-size: 1.30em;
+      }
+      p, address, a{
+        font-size: 1.30em;
+        text-align: left;
+      }
+      .connect{
+        a{
+          margin: 0;
+        }
+      }
+      .updated{
+        width: 100%;
+        margin: 0;
+        input.email{
+          text-align: left;
+          font-size: 1em;
+
+        }
+      }
+      &.first{
+        padding-left: 2.5%;
+      }
+      &.last{
+        margin-right: 0;
+        width: 20.1%;
+        .footer-content{
+          border: 0;
+        }
+      }
+    }
+  }
+  .footer-content.address a{
+    text-align: left;
+  }
+  .subfooter{
+    p{
+      font-size: 1.15em;
+    }
+    .copy{
+      width: auto;
+      text-align: left;
+      padding-left: 1.66666%;
+      p{
+        line-height: 3.25em;
+      }
+    }
+    .social{
+      float: right;
+      padding-right: 1.666666%;
+      margin-top: 0;
+      width: auto;
+      padding-top: 0;
+      ul{
+        margin-top: 0;
+        li{
+          display: block;
+          float: left;
+          margin-right: 3.5555em;
+          width: auto;
+          margin-bottom: 0;
+          &:last-child{
+            margin-right: 3.5555em;
+          }
+          span {
+            font-size: 37px;
+          }
+        }
+      }
+    }
+  }
+  .footer-content{
+    border-right: 1px solid #acacac;
+    min-height: 230px;
+  }
+}

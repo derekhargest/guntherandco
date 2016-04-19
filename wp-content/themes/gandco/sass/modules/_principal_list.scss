@@ -1,0 +1,126 @@
+.principals{
+  margin-top: 2.2222em;
+  .principal-item{
+    width: 100%;
+    padding-bottom: 2em;
+    h4{
+      font-size: 2.62em;
+      margin-top: 1.75em;
+      line-height: .75em;
+    }
+    span{
+      font-size: 1.75em;
+    }
+    p{
+      font-size: 1.75em;
+      line-height: 1.5em;
+      margin-top: 1.75em;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+.team{
+  margin-top: 1.25em;
+}
+.team-list{
+  h3{
+    color: #fff;
+    font-size: 3.5em;
+    margin-bottom: 1em;
+  }
+}
+.team-item{
+  width: 100%;
+  position: relative;
+  margin-bottom: 2.5em;
+  overflow: hidden;
+  margin-right: 0;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .overlay{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.8);
+    width: 92.513%;
+    height: auto;
+    min-height: 35.5%;
+    padding-top: 57.5%;
+    padding-left: 7.487%;
+  }
+  &:hover .overlay{
+    opacity: 1;
+    z-index: 2;
+  }
+  h4{
+    font-size: 1.3333em;
+    font-weight: 600;
+    text-transform: none;
+    span{
+      font-size: 1.3333em;
+    }
+  }
+}
+
+@media (min-width: 390px){
+  .team-list h3{
+    font-size: 2.5em;
+  }
+  .team-item{
+    width: 48.71%;
+    float: left;
+    margin-right: 2.5667%;
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+
+}
+
+
+@media (min-width: 924px){
+  .principals{
+    .principal-item{
+      @include span(5 of 10);
+      padding-bottom: 0;
+      p{
+        font-size: 1.75em;
+      }
+      &:nth-child(2){
+        @include span(5 of 10 last);
+      }
+      h4{
+        margin-top: 1.25em;
+      }
+    }
+  }
+
+  .team-list h3{
+    font-size: 2.62em;
+    margin-bottom: 0;
+  }
+
+  .team-item{
+    width: 23.07605%;
+    margin-right: 2.5667%;
+    margin-bottom: 2.5em;
+    margin-bottom: 2em;
+    &:nth-child(2n){
+      margin-right: 2.565%;
+    }
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}

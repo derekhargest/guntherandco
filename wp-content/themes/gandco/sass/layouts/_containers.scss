@@ -1,0 +1,77 @@
+@import "susy";
+
+$susy: (
+  columns: 12,
+  gutters: .25,
+);
+
+.container{
+	@include container(1410px);
+	@include clearfix;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.content-container{
+  width: 80%;
+  margin: 0 auto;
+  padding: 6em 0;
+  @include clearfix;
+  .entry-content{
+    padding-top: 2em;
+  }
+}
+
+.site-main{
+  background: #f2f2f2;
+}
+
+.content-area{
+  &.secondary{
+    background: $c-gc_light_teal;
+  }
+  &.team-list{
+    background: $c-gc_red;
+  }
+}
+
+@media (min-width: 450px){
+
+}
+@media (min-width: 800px){
+
+  .content-area{
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1140px){
+  .content-container{
+    width: 91.295%;
+    margin: 0 auto;
+  }
+  .content-container{
+    @include container(1170px);
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: 13.333em;
+    margin-bottom: 5em;
+      &.bottom{
+        margin-top: 3em;
+      }
+  }
+  .content-container.secondary{
+    margin-bottom: 9em;
+  }
+  .content-container .entry-content{
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1260px){
+  .content-container{
+    padding: 0;
+    width: 100%;
+  }
+}

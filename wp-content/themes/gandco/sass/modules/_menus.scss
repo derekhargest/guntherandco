@@ -1,0 +1,51 @@
+#menus{
+	h3{
+		text-align: center;
+		margin-bottom: 3em;
+	}
+	.content-container{
+		margin-top: 3.8888em;
+	}
+	.menu-link{
+		display: block;
+		width: 100%;
+		background: #808080;
+		margin-bottom: .75em;
+		color: #fff;
+		text-decoration: none;
+		text-align: center;
+		font-size: 2.5em;
+		text-transform: uppercase;
+		padding: 2em 0;
+		@include clearfix;
+		span{
+			width: 100%;
+			text-align: center;
+			float: left;
+			font-size: 2.5em;
+			margin-top: .15em;
+		}
+	}
+}
+
+@media (min-width: 600px){
+	#menus{
+		.menu-link{
+			@include span(5 of 10);
+			margin-bottom: .75em;
+			color: #fff;
+			text-decoration: none;
+			text-align: center;
+			font-size: 2em;
+			text-transform: uppercase;
+			padding: 1.2em 0;
+			&.last{
+				@include span(5 of 10 last);
+			}
+			span{
+				font-size: 2em;
+				margin-top: .15em;
+			}
+		}
+	}
+}

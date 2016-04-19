@@ -1,0 +1,88 @@
+#banner{
+	position: relative;
+	z-index: 1;
+}
+
+
+.banner-wrapper{
+  position: relative;
+  height: auto;
+}
+
+.banner-overlay{
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  margin-top: 2em;
+  h2, h3{
+    text-align: center;
+    font-size: 2.20em;
+    font-weight: 400;
+    line-height: 1.25em;
+    max-width: 13em;
+    margin: 0 auto;
+  }
+  .overlay-logo{
+    margin: 0 auto;
+    max-width: 144px;
+    margin-top: 1.15em;
+    width: 9%;
+
+  }
+}
+
+.banner.main-banner{
+  position: relative;
+}
+
+@media (min-width: 450px){
+  .banner-overlay{
+    margin-top: 16%;
+    .overlay-logo{
+      margin-top: 2.555em;
+    }
+    h2,h3{
+      font-size: 3em;
+      font-weight: 200;
+      line-height: 1.15em;
+
+    }
+  }
+}
+
+@media (min-width: 577px){
+  #banner{
+    position: fixed;
+  }
+  .banner-overlay{
+    position: absolute;
+  }
+  #content-block{
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px){
+  #content-block{
+    margin-top: 0em !important;
+  }
+  .banner-overlay{
+    margin-top: 3.5em !important;
+    padding-bottom: 4em !important;
+  }
+  .banner-overlay{
+
+  }
+}
+
+@media (min-width: 1140px){
+  .banner-overlay{
+    margin-top: 18%;
+    .overlay-logo{
+      margin-top: 3.555em;
+    }
+    h2,h3{
+      font-size: 5.5em;
+    }
+  }
+}
