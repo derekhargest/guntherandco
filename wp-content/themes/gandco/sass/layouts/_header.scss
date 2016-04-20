@@ -9,6 +9,13 @@
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 	-webkit-backface-visibility: hidden;
+	a{
+		img{
+			display: block;
+			width: 100%;
+		}
+	}
+
 	.site-title{
 		display: table-cell;
 		vertical-align: middle;
@@ -242,7 +249,7 @@
 
 @media (min-width: 1300px){
 		.logo{
-	padding-left: 4.444%;
+	padding-left: 4.4%;
 	padding-right: 5.555%;
 	}
 }

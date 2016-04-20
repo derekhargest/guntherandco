@@ -762,6 +762,10 @@ input, textarea {
   -webkit-transition: opacity .25s ease-in-out;
   -webkit-backface-visibility: hidden;
 }
+.logo a img {
+  display: block;
+  width: 100%;
+}
 .logo .site-title {
   display: table-cell;
   vertical-align: middle;
@@ -974,7 +978,7 @@ input, textarea {
 }
 @media (min-width: 1300px) {
   .logo {
-    padding-left: 4.444%;
+    padding-left: 4.4%;
     padding-right: 5.555%;
   }
 }
@@ -1353,6 +1357,8 @@ input, textarea {
 @media (min-width: 700px) {
   #banner {
     position: fixed;
+    float: left;
+    width: 100%;
   }
 
   .banner-overlay, .banner-overlay-notitle {

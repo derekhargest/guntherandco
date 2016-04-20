@@ -85,6 +85,8 @@
 @media (min-width: 700px){
   #banner{
     position: fixed;
+    float: left;
+    width: 100%;
   }
   .banner-overlay, .banner-overlay-notitle{
     position: absolute;
