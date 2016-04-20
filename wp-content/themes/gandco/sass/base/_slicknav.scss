@@ -126,7 +126,10 @@ color: $c-text-color;
     margin: 0; }
 
     .slicknav_collapsed .slicknav_row{
-      padding: .5em 0 .49em 0;
+      padding: 1em 0 1em 0;
+      a{
+        padding-bottom: .5em;
+      }
       a:after{
         content: '+';
         margin-left: .5em;
@@ -135,7 +138,10 @@ color: $c-text-color;
     }
 
     .slicknav_open .slicknav_row{
-      padding: 1em 0 .95em 0;
+      padding: 1em 0 1em 0;
+      a{
+        padding-bottom: .5em;
+      }
       a:after{
         content: '-';
         margin-left: .75em;
