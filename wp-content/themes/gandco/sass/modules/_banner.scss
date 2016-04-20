@@ -26,6 +26,7 @@
     line-height: 1.25em;
     max-width: 13em;
     margin: 0 auto;
+    color: #fff;
   }
   &.home .overlay-logo{
     margin: 0 auto;
@@ -37,6 +38,7 @@
 
 .banner-overlay-notitle{
   margin-top: 9% !important;
+  margin-bottom: 9%;
   .dark{
     display: block;
 
@@ -44,25 +46,38 @@
   .white{
     display: none;
   }
+  .overlay-logo{
+    width: 16%;
+  }
 }
 
 .banner.main-banner{
   position: relative;
 }
 
-@media (min-width: 836px){
+@media ( min-width: 703px ) and (max-width: 1140px ){
 
+.banner-overlay-notitle .overlay-logo{
+  width: 10%;
+}
+
+}
+
+@media (min-width: 545px){
+  .banner-overlay-notitle{
+    margin: 9% 0;
+  }
 }
 
 @media (min-width: 450px){
   .banner-overlay, .banner-overlay-notitle{
-    margin-top: 16%;
+    margin-top: 16.5%;
     &.home .overlay-logo{
       margin-top: 2.555em;
     }
     h2,h3{
       font-size: 4em;
-      font-weight: 200;
+      font-weight: 400;
       line-height: 1.15em;
     }
   }
@@ -96,11 +111,6 @@
   .banner-overlay{
     margin-top: 3.5em !important;
     padding-bottom: 4em !important;
-  }
-
-  .banner-overlay-notitle{
-    padding-bottom: 4em !important;
-
   }
 }
 

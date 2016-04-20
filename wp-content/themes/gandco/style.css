@@ -422,7 +422,7 @@ small {
 .slicknav_nav {
   color: #382d25;
   margin: 0;
-  padding: 2em 0;
+  padding: 4em 0;
   font-size: 0.875em;
   list-style: none;
   overflow: hidden;
@@ -475,7 +475,7 @@ small {
 }
 
 .slicknav_collapsed .slicknav_row {
-  padding: .5em 0;
+  padding: .5em 0 .49em 0;
 }
 .slicknav_collapsed .slicknav_row a:after {
   content: '+';
@@ -484,7 +484,7 @@ small {
 }
 
 .slicknav_open .slicknav_row {
-  padding: .5em 0;
+  padding: .5em 0 .49em 0;
 }
 .slicknav_open .slicknav_row a:after {
   content: '-';
@@ -702,7 +702,7 @@ input, textarea {
 
 */
 #events, #menus {
-  background: #d3d3d3;
+  background: #f2f2f2;
   overflow: hidden;
   *zoom: 1;
 }
@@ -772,7 +772,7 @@ input, textarea {
 #content-block {
   position: relative;
   z-index: 10;
-  background: #fff;
+  background: #f2f2f2;
 }
 
 #footer {
@@ -1144,7 +1144,7 @@ input, textarea {
   font-size: 32px;
 }
 .subfooter .social a {
-  color: #fff;
+  color: #f2f2f2;
   text-decoration: none;
 }
 .subfooter .social a span {
@@ -1295,6 +1295,7 @@ input, textarea {
   line-height: 1.25em;
   max-width: 13em;
   margin: 0 auto;
+  color: #fff;
 }
 .banner-overlay.home .overlay-logo, .banner-overlay-notitle.home .overlay-logo {
   margin: 0 auto;
@@ -1305,6 +1306,7 @@ input, textarea {
 
 .banner-overlay-notitle {
   margin-top: 9% !important;
+  margin-bottom: 9%;
 }
 .banner-overlay-notitle .dark {
   display: block;
@@ -1312,21 +1314,34 @@ input, textarea {
 .banner-overlay-notitle .white {
   display: none;
 }
+.banner-overlay-notitle .overlay-logo {
+  width: 16%;
+}
 
 .banner.main-banner {
   position: relative;
 }
 
+@media (min-width: 703px) and (max-width: 1140px) {
+  .banner-overlay-notitle .overlay-logo {
+    width: 10%;
+  }
+}
+@media (min-width: 545px) {
+  .banner-overlay-notitle {
+    margin: 9% 0;
+  }
+}
 @media (min-width: 450px) {
   .banner-overlay, .banner-overlay-notitle {
-    margin-top: 16%;
+    margin-top: 16.5%;
   }
   .banner-overlay.home .overlay-logo, .banner-overlay-notitle.home .overlay-logo {
     margin-top: 2.555em;
   }
   .banner-overlay h2, .banner-overlay h3, .banner-overlay-notitle h2, .banner-overlay-notitle h3 {
     font-size: 4em;
-    font-weight: 200;
+    font-weight: 400;
     line-height: 1.15em;
   }
 }
@@ -1360,10 +1375,6 @@ input, textarea {
 
   .banner-overlay {
     margin-top: 3.5em !important;
-    padding-bottom: 4em !important;
-  }
-
-  .banner-overlay-notitle {
     padding-bottom: 4em !important;
   }
 }
