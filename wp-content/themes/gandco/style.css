@@ -702,7 +702,7 @@ input, textarea {
 
 */
 #events, #menus {
-  background: #f2f2f2;
+  background: #dfdfdf;
   overflow: hidden;
   *zoom: 1;
 }
@@ -1402,7 +1402,7 @@ input, textarea {
 #menus .menu-link {
   display: block;
   width: 100%;
-  background: #808080;
+  background: #e45d50;
   margin-bottom: .75em;
   color: #fff;
   text-decoration: none;
@@ -1410,6 +1410,7 @@ input, textarea {
   font-size: 2.5em;
   text-transform: uppercase;
   padding: 2em 0;
+  transition: all 200ms linear;
   overflow: hidden;
   *zoom: 1;
 }
@@ -1419,6 +1420,9 @@ input, textarea {
   float: left;
   font-size: 2.5em;
   margin-top: .15em;
+}
+#menus .menu-link:hover {
+  opacity: .85;
 }
 
 @media (min-width: 600px) {
@@ -1759,7 +1763,7 @@ input, textarea {
 }
 .cta-section {
   background: #137d79;
-  transition: all linear .25s;
+  transition: all linear 200ms;
 }
 .cta-section:hover {
   background: #189792;

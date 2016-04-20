@@ -1,6 +1,6 @@
 .cta-section{
   background: $c-gc_teal;
-  transition: all linear .25s;
+  transition: all linear 200ms;
   &:hover{
     background: #189792;
   }
