@@ -475,7 +475,7 @@ small {
 }
 
 .slicknav_collapsed .slicknav_row {
-  padding: 1em 0;
+  padding: .5em 0;
 }
 .slicknav_collapsed .slicknav_row a:after {
   content: '+';
@@ -484,7 +484,7 @@ small {
 }
 
 .slicknav_open .slicknav_row {
-  padding: 1em 0;
+  padding: .5em 0;
 }
 .slicknav_open .slicknav_row a:after {
   content: '-';
