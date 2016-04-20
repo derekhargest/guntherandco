@@ -783,7 +783,7 @@ input, textarea {
 .site-header-main {
   position: fixed;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   width: 100%;
   height: auto;
   padding-top: 0;
