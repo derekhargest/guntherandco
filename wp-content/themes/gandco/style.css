@@ -422,7 +422,7 @@ small {
 .slicknav_nav {
   color: #382d25;
   margin: 0;
-  padding: 4em 0;
+  padding: 2em 0;
   font-size: 0.875em;
   list-style: none;
   overflow: hidden;
@@ -484,7 +484,7 @@ small {
 }
 
 .slicknav_open .slicknav_row {
-  padding: .5em 0 .49em 0;
+  padding: 1em 0 .95em 0;
 }
 .slicknav_open .slicknav_row a:after {
   content: '-';
