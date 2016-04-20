@@ -1295,7 +1295,6 @@ input, textarea {
   line-height: 1.25em;
   max-width: 13em;
   margin: 0 auto;
-  color: #fff;
 }
 .banner-overlay.home .overlay-logo, .banner-overlay-notitle.home .overlay-logo {
   margin: 0 auto;
@@ -1341,7 +1340,7 @@ input, textarea {
   }
   .banner-overlay h2, .banner-overlay h3, .banner-overlay-notitle h2, .banner-overlay-notitle h3 {
     font-size: 4em;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.15em;
   }
 }
