@@ -43,7 +43,9 @@
 			      zoom: 17,
 			      mapTypeId: google.maps.MapTypeId.ROADMAP,
 			      center: new google.maps.LatLng(39.278900, -76.568170),
-						scrollwheel: false
+						scrollwheel: false,
+						draggable: false,
+						disableDefaultUI: true
 			    }
 					var iconBase = '<?php echo esc_url( get_template_directory_uri() ) ?>/images/';
 
@@ -74,7 +76,7 @@
 
 	<body <?php body_class(); ?>>
 		<header>
-			<div class="site-header-main">
+			<div class="site-header-main" id="header">
 				<div class="site-branding logo">
 					<?php if ( is_front_page() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/main-logo.png" alt="<?php bloginfo( 'name' ); ?>"></a></h1>

@@ -8,7 +8,13 @@
   height: auto;
 }
 
-.banner-overlay{
+.overlay-logo{
+  margin: 0 auto;
+  max-width: 120px;
+  width: 9%;
+}
+
+.banner-overlay, .banner-overlay-notitle{
   position: relative;
   width: 100%;
   z-index: 10;
@@ -21,7 +27,7 @@
     max-width: 13em;
     margin: 0 auto;
   }
-  .overlay-logo{
+  &.home .overlay-logo{
     margin: 0 auto;
     max-width: 144px;
     margin-top: 1.15em;
@@ -30,30 +36,38 @@
   }
 }
 
+.banner-overlay-notitle{
+  position: absolute;
+  top: 0;
+}
+
 .banner.main-banner{
   position: relative;
 }
 
+@media (min-width: 836px){
+
+}
+
 @media (min-width: 450px){
-  .banner-overlay{
+  .banner-overlay, .banner-overlay-notitle{
     margin-top: 16%;
-    .overlay-logo{
+    &.home .overlay-logo{
       margin-top: 2.555em;
     }
     h2,h3{
-      font-size: 3em;
+      font-size: 4em;
       font-weight: 200;
       line-height: 1.15em;
-
     }
   }
 }
 
-@media (min-width: 577px){
+@media (min-width: 700px){
   #banner{
     position: fixed;
   }
-  .banner-overlay{
+  .banner-overlay, .banner-overlay-notitle{
     position: absolute;
   }
   #content-block{
@@ -61,7 +75,7 @@
   }
 }
 
-@media (max-width: 576px){
+@media (max-width: 699px){
   #content-block{
     margin-top: 0em !important;
   }
@@ -69,19 +83,27 @@
     margin-top: 3.5em !important;
     padding-bottom: 4em !important;
   }
-  .banner-overlay{
+
+  .banner-overlay-notitle{
+    margin-top: 26% !important;
+    padding-bottom: 4em !important;
 
   }
 }
 
 @media (min-width: 1140px){
-  .banner-overlay{
-    margin-top: 18%;
-    .overlay-logo{
-      margin-top: 3.555em;
-    }
+  .banner-overlay, .banner-overlay-notitle{
+    margin-top: 16%;
     h2,h3{
       font-size: 5.5em;
+    }
+  }
+
+  .banner-overlay.home{
+    margin-top: 18%;
+
+    .overlay-logo{
+      margin-top: 3.555em;
     }
   }
 }

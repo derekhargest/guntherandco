@@ -18,7 +18,7 @@
 			3650 Toone Street<br />
 			Brewers Hill<br />
 			Baltimore, MD 21224</address>
-			<a href="#"><span class="icon-location-icon"></span>Parking</a>
+			<a href="#"><span class="icon-parking-icon"></span>Parking</a>
 			</div>
 
 		</div>
@@ -93,6 +93,13 @@
 		}
 	});
 
+	$(window).load(function(){
+			if ($(window).width() < 700) {
+				var Headheight = document.getElementById("header").offsetHeight;
+				document.getElementById("primary").style.marginTop = Headheight + 'px';
+		}
+	});
+
 	</script>
 
 	<script type="text/javascript">
@@ -102,18 +109,30 @@
 				document.getElementById("content-block").style.marginTop = height + 'px';
 			}
 		});
+
+		$(window).resize(function(){
+					if ($(window).width() < 700) {
+						var Headheight = document.getElementById("header").offsetHeight;
+						document.getElementById("primary").style.marginTop = Headheight + 'px';
+					}
+					if ($(window).width() > 700) {
+						document.getElementById("primary").style.marginTop = 0 + 'px';
+					}
+			});
 	</script>
 
 <script type="text/javascript">
 	$(document).ready(function(){
 		var headerHeight = $(".main-navigation").height();
 		$(".logo").height(headerHeight);
+		$(".slicknav_btn").height(headerHeight);
 
 	});
 
 	$(window).resize(function() {
 		var headerHeight = $(".main-navigation").height();
 		$(".logo").height(headerHeight);
+			$(".slicknav_btn").height(headerHeight);
 	});
 </script>
 

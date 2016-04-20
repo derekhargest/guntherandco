@@ -116,6 +116,10 @@ Tags: responsive-layout, post-formats
   content: "\e906";
 }
 
+.icon-parking-icon:before {
+  content: "\e907";
+}
+
 html {
   font: 45%/1.5 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -368,6 +372,7 @@ small {
 .slicknav_nav .slicknav_arrow {
   font-size: 0.8em;
   margin: 0 0 0 0.4em;
+  display: none;
 }
 
 .slicknav_nav .slicknav_item {
@@ -431,7 +436,7 @@ small {
 }
 
 .slicknav_nav .slicknav_row {
-  padding: 1em 0;
+  padding: 0;
   margin: 2px 5px;
 }
 
@@ -469,6 +474,24 @@ small {
   margin: 0;
 }
 
+.slicknav_collapsed .slicknav_row {
+  padding: 1em 0;
+}
+.slicknav_collapsed .slicknav_row a:after {
+  content: '+';
+  margin-left: .5em;
+  width: 10px;
+}
+
+.slicknav_open .slicknav_row {
+  padding: 1em 0;
+}
+.slicknav_open .slicknav_row a:after {
+  content: '-';
+  margin-left: .75em;
+  width: 10px;
+}
+
 .slicknav_brand {
   color: #fff;
   font-size: 18px;
@@ -490,6 +513,11 @@ small {
   color: #000003;
 }
 
+@media screen and (min-width: 1140px) {
+  .slicknav_arrow {
+    display: block;
+  }
+}
 .container {
   max-width: 1410px;
   margin-left: auto;
@@ -759,6 +787,17 @@ input, textarea {
   width: 100%;
   height: auto;
   padding-top: 0;
+  top: 0;
+}
+
+.slicknav_btn {
+  padding: 0 4% 0 4% !important;
+  display: table;
+}
+.slicknav_btn .slicknav_icon {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
 }
 
 .slicknav_menu {
@@ -939,7 +978,6 @@ input, textarea {
     padding-left: 0;
     padding-left: 2%;
     min-width: 0;
-    margin-top: 4px;
   }
 
   .main-navigation ul li a {
@@ -1213,13 +1251,19 @@ input, textarea {
   height: auto;
 }
 
-.banner-overlay {
+.overlay-logo {
+  margin: 0 auto;
+  max-width: 120px;
+  width: 9%;
+}
+
+.banner-overlay, .banner-overlay-notitle {
   position: relative;
   width: 100%;
   z-index: 10;
   margin-top: 2em;
 }
-.banner-overlay h2, .banner-overlay h3 {
+.banner-overlay h2, .banner-overlay h3, .banner-overlay-notitle h2, .banner-overlay-notitle h3 {
   text-align: center;
   font-size: 2.20em;
   font-weight: 400;
@@ -1227,11 +1271,16 @@ input, textarea {
   max-width: 13em;
   margin: 0 auto;
 }
-.banner-overlay .overlay-logo {
+.banner-overlay.home .overlay-logo, .banner-overlay-notitle.home .overlay-logo {
   margin: 0 auto;
   max-width: 144px;
   margin-top: 1.15em;
   width: 9%;
+}
+
+.banner-overlay-notitle {
+  position: absolute;
+  top: 0;
 }
 
 .banner.main-banner {
@@ -1239,24 +1288,24 @@ input, textarea {
 }
 
 @media (min-width: 450px) {
-  .banner-overlay {
+  .banner-overlay, .banner-overlay-notitle {
     margin-top: 16%;
   }
-  .banner-overlay .overlay-logo {
+  .banner-overlay.home .overlay-logo, .banner-overlay-notitle.home .overlay-logo {
     margin-top: 2.555em;
   }
-  .banner-overlay h2, .banner-overlay h3 {
-    font-size: 3em;
+  .banner-overlay h2, .banner-overlay h3, .banner-overlay-notitle h2, .banner-overlay-notitle h3 {
+    font-size: 4em;
     font-weight: 200;
     line-height: 1.15em;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 700px) {
   #banner {
     position: fixed;
   }
 
-  .banner-overlay {
+  .banner-overlay, .banner-overlay-notitle {
     position: absolute;
   }
 
@@ -1264,7 +1313,7 @@ input, textarea {
     margin-top: 0;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 699px) {
   #content-block {
     margin-top: 0em !important;
   }
@@ -1273,16 +1322,25 @@ input, textarea {
     margin-top: 3.5em !important;
     padding-bottom: 4em !important;
   }
+
+  .banner-overlay-notitle {
+    margin-top: 26% !important;
+    padding-bottom: 4em !important;
+  }
 }
 @media (min-width: 1140px) {
-  .banner-overlay {
+  .banner-overlay, .banner-overlay-notitle {
+    margin-top: 16%;
+  }
+  .banner-overlay h2, .banner-overlay h3, .banner-overlay-notitle h2, .banner-overlay-notitle h3 {
+    font-size: 5.5em;
+  }
+
+  .banner-overlay.home {
     margin-top: 18%;
   }
-  .banner-overlay .overlay-logo {
+  .banner-overlay.home .overlay-logo {
     margin-top: 3.555em;
-  }
-  .banner-overlay h2, .banner-overlay h3 {
-    font-size: 5.5em;
   }
 }
 #menus h3 {

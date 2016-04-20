@@ -40,6 +40,17 @@
 	width: 100%;
 	height: auto;
 	padding-top: 0;
+	top: 0;
+}
+
+.slicknav_btn{
+	padding: 0 4% 0 4% !important;
+	display: table;
+	.slicknav_icon{
+		display: table-cell;
+    vertical-align: middle;
+    float: none
+	}
 }
 
 .slicknav_menu{
@@ -242,7 +253,6 @@
 		padding-left: 0;
 		padding-left: 2%;
 		min-width: 0;
-		margin-top: 4px;
 	}
 	.main-navigation ul li a{
 		font-size: 1.14em;

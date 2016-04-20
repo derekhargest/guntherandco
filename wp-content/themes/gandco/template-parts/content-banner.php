@@ -18,6 +18,9 @@
 <?php else:?>
 	<div class="banner-overlay">
 		<h2><?php the_title(); ?></h2>
+			<div class="overlay-logo">
+				<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/overlay-logo.png" alt="Gunther and Co. Logo" />
+			</div>
 	</div>
 <?php endif; ?>
 

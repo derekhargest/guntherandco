@@ -54,7 +54,9 @@ padding-bottom: 2em;}
     display: block; }
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
-    margin: 0 0 0 0.4em; }
+    margin: 0 0 0 0.4em;
+    display: none;
+  }
   .slicknav_nav .slicknav_item {
     cursor: pointer; }
     .slicknav_nav .slicknav_item a {
@@ -98,7 +100,7 @@ color: $c-text-color;
     padding: 0;
     margin: 0 0 0 0; }
   .slicknav_nav .slicknav_row {
-    padding: 1em 0;
+    padding: 0;
     margin: 2px 5px; }
     .slicknav_nav .slicknav_row:hover {
       -webkit-border-radius: 0px;
@@ -123,12 +125,34 @@ color: $c-text-color;
     padding: 0;
     margin: 0; }
 
+    .slicknav_collapsed .slicknav_row{
+      padding: 1em 0;
+      a:after{
+        content: '+';
+        margin-left: .5em;
+        width: 10px;
+      }
+    }
+
+    .slicknav_open .slicknav_row{
+      padding: 1em 0;
+      a:after{
+        content: '-';
+        margin-left: .75em;
+        width: 10px;
+    }
+  }
+
 .slicknav_brand {
   color: #fff;
   font-size: 18px;
   line-height: 30px;
   padding: 7px 12px;
   height: 44px; }
+
+  .slicknav_row{
+
+  }
 
 @media screen and (max-width: 40em) {
 	.js #menu {
@@ -143,5 +167,11 @@ color: $c-text-color;
 .slicknav_nav .slicknav_row:hover{
   .slicknav_arrow{
     color: $c-gc_black;
+  }
+}
+
+@media screen and (min-width: 1140px){
+  .slicknav_arrow{
+    display: block;
   }
 }
