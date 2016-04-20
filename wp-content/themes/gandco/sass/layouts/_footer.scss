@@ -2,11 +2,12 @@
   background: #382e26;
   padding-top: 3em;
   .container{
-    padding-bottom: 2em;
+    padding-bottom: 5em;
+    padding-top: 3em;
   }
   .footer-item{
     width: 100%;
-    padding-bottom: 2em;
+    padding-bottom: 5em;
     h4{
       color: #fff;
       font-size: 1.75em;
@@ -146,6 +147,27 @@
   }
 }
 
+@media (min-width: 585px){
+
+  .site-footer .footer-item{
+    width: 50%;
+    float: left;
+    font-size: .85em;
+    padding-bottom: 2em;
+    &:nth-child(3){
+      clear: left;
+    }
+    h4{
+      font-size: 1.75em;
+    }
+  }
+
+  .site-footer .container{
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
+
 
 @media (min-width: 1140px){
   .footer-content.updated{
@@ -155,15 +177,20 @@
     padding-top: 6.66666em;
     .container{
       padding-bottom: 3.5em;
+      padding-top: 0;
     }
     .footer-item{
       width: 23%;
       float: left;
       margin-right: 2.5539%;
       padding-bottom: 0;
+      font-size: 1em;
+      &:nth-child(3){
+        clear: none;
+      }
       h4{
         text-align: left;
-        font-size: 1.30em;
+        font-size: 1.40em;
       }
       p, address, a{
         font-size: 1.30em;

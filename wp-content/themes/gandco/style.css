@@ -1012,11 +1012,12 @@ input, textarea {
   padding-top: 3em;
 }
 .site-footer .container {
-  padding-bottom: 2em;
+  padding-bottom: 5em;
+  padding-top: 3em;
 }
 .site-footer .footer-item {
   width: 100%;
-  padding-bottom: 2em;
+  padding-bottom: 5em;
 }
 .site-footer .footer-item h4 {
   color: #fff;
@@ -1150,6 +1151,25 @@ input, textarea {
   text-indent: -9999px;
 }
 
+@media (min-width: 585px) {
+  .site-footer .footer-item {
+    width: 50%;
+    float: left;
+    font-size: .85em;
+    padding-bottom: 2em;
+  }
+  .site-footer .footer-item:nth-child(3) {
+    clear: left;
+  }
+  .site-footer .footer-item h4 {
+    font-size: 1.75em;
+  }
+
+  .site-footer .container {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+}
 @media (min-width: 1140px) {
   .footer-content.updated {
     width: 320px;
@@ -1160,16 +1180,21 @@ input, textarea {
   }
   .site-footer .container {
     padding-bottom: 3.5em;
+    padding-top: 0;
   }
   .site-footer .footer-item {
     width: 23%;
     float: left;
     margin-right: 2.5539%;
     padding-bottom: 0;
+    font-size: 1em;
+  }
+  .site-footer .footer-item:nth-child(3) {
+    clear: none;
   }
   .site-footer .footer-item h4 {
     text-align: left;
-    font-size: 1.30em;
+    font-size: 1.40em;
   }
   .site-footer .footer-item p, .site-footer .footer-item address, .site-footer .footer-item a {
     font-size: 1.30em;

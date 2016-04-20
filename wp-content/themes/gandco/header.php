@@ -36,7 +36,7 @@
 			var overlay = null;
 			var historicalOverlay;
 			  function initialize() {
-			    var myLatLng = {lat: 39.278742, lng: -76.564965};
+			    var myLatLng = {lat: 39.279024, lng: -76.565706};
 
 			    var mapCanvas = document.getElementById('map');
 			    var mapOptions = {
