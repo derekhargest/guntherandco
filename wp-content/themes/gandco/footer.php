@@ -1,40 +1,73 @@
 <footer id="footer" class="site-footer">
+
 	<div class="container">
+
 		<div class="footer-item first">
+
 			<div class="footer-content hours">
-			<h4>Hours</h4>
-			<p>Monday - Thursday</p>
-			<p class="hour">5:00 pm - 10:00 pm</p>
-			<p>Friday - Saturday</p>
-			<p class="hour">5:00 pm - 11:00 pm</p>
-			<p>Sunday</p>
-			<p class="hour">5:00 pm - 9:00 pm</p>
+
+				<h4>Hours</h4>
+
+				<p>Monday - Thursday</p>
+
+				<p class="hour">5:00 pm - 10:00 pm</p>
+
+				<p>Friday - Saturday</p>
+
+				<p class="hour">5:00 pm - 11:00 pm</p>
+
+				<p>Sunday</p>
+
+				<p class="hour">5:00 pm - 9:00 pm</p>
+
 			</div>
+
 		</div>
+
 		<div class="footer-item">
+
 			<div class="footer-content address">
-			<h4>Address</h4>
-			<address>Gunther & Co. <br />
-			3650 Toone Street<br />
-			Brewers Hill<br />
-			Baltimore, MD 21224</address>
-			<a href="#"><span class="icon-parking-icon"></span>Parking</a>
+
+				<h4>Address</h4>
+
+				<address>Gunther & Co. <br />
+
+				3650 Toone Street<br />
+
+				Brewers Hill<br />
+
+				Baltimore, MD 21224</address>
+
+				<a href="#"><span class="icon-parking-icon"></span>Parking</a>
+
 			</div>
 
 		</div>
+
 		<div class="footer-item">
+
 			<div class="footer-content connect">
-			<h4>Connect</h4>
-				<ul>
-					<li><a href="#"><span class="icon icon-location-icon"></span> Directions</a></li>
-					<li><a href="<?php echo home_url(); ?>/contact-us"><span class="icon icon-phone-icon"></span> Contact Us</a></li>
-					<li><a href="<?php echo home_url(); ?>/contact-us"><span class="icon icon-icon-star"></span> Make Reservation</a></li>
-				</ul>
+
+				<h4>Connect</h4>
+
+					<ul>
+
+						<li><a href="#"><span class="icon icon-location-icon"></span> Directions</a></li>
+
+						<li><a href="<?php echo home_url(); ?>/contact-us"><span class="icon icon-phone-icon"></span> Contact Us</a></li>
+
+						<li><a href="<?php echo home_url(); ?>/contact-us"><span class="icon icon-icon-star"></span> Make Reservation</a></li>
+
+					</ul>
+
 			</div>
 
 		</div>
+
 		<div class="footer-item last">
+
 			<div class="footer-content updated">
+
 				<h4>Stay Updated</h4>
 				<!-- Begin MailChimp Signup Form -->
 					<div id="mc_embed_signup">
@@ -54,91 +87,41 @@
 						    </div>
 						</form>
 					</div>
-
 					<!--End mc_embed_signup-->
 			</div>
+
 		</div>
+
 	</div>
+
 	<div class="subfooter">
+
 		<div class="copy">
+
 			<p>&copy; <?php echo date("Y") ?> Gunther & Co. 3650 Toone Street, Baltimore, MD 21224</p>
+
 		</div>
+
 		<div class="social">
+
 			<ul>
+
 				<li><a href="https://www.facebook.com/GuntherAndCo/" target="_blank"><span class="icon-facebook-icon"></span></a></li>
+
 				<li><a href="https://twitter.com/eatatgunther" target="_blank"><span class="icon-twitter-icon"></span></a></li>
+
 				<li><a href="https://www.instagram.com/eatatgunther/" target="_blank"><span class="icon-instagram-icon"></span></a></li>
+
 			</ul>
+
 		</div>
+
 	</div>
+
 </footer>
 
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#mobile-menu .menu').slicknav({
-			label: '',
-			prependTo: '#mobile-menu-location',
-			duration: '1000',
-			label: 'Menu',
-		});
-	});
-</script>
-
-<script type="text/javascript">
-
-
-	$(window).load(function(){
-		if($("#banner").length > 0){
-			var height = document.getElementById("banner").offsetHeight;
-			document.getElementById("content-block").style.marginTop = height + 'px';
-		}
-	});
-
-	$(window).load(function(){
-			if ($(window).width() < 700) {
-				var Headheight = document.getElementById("header").offsetHeight;
-				document.getElementById("primary").style.marginTop = Headheight + 'px';
-		}
-	});
-
-	</script>
-
-	<script type="text/javascript">
-		$(window).resize(function(){
-			if($("#banner").length > 0){
-				var height = document.getElementById("banner").offsetHeight;
-				document.getElementById("content-block").style.marginTop = height + 'px';
-			}
-		});
-
-		$(window).resize(function(){
-					if ($(window).width() < 700) {
-						var Headheight = document.getElementById("header").offsetHeight;
-						document.getElementById("primary").style.marginTop = Headheight + 'px';
-					}
-					if ($(window).width() > 700) {
-						document.getElementById("primary").style.marginTop = 0 + 'px';
-					}
-			});
-	</script>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		var headerHeight = $(".main-navigation").height();
-		$(".logo").height(headerHeight);
-		$(".slicknav_btn").height(headerHeight);
-
-	});
-
-	$(window).resize(function() {
-		var headerHeight = $(".main-navigation").height();
-		$(".logo").height(headerHeight);
-			$(".slicknav_btn").height(headerHeight);
-	});
-</script>
-
-
-
 <?php wp_footer(); ?>
+
 </body>
+
 </html>

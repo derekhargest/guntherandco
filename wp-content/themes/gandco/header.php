@@ -26,46 +26,73 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.20"></script>
+		<?php if (is_page ('contact-us')):?>
+		<script>
+		var color = "#137d79";
+		var overlay = null;
+		var map;
+		  function initialize() {
+		    var myLatLng = {lat: 39.279024, lng: -76.565706};
 
-			<script>
-			var color = "#137d79";
-			var overlay = null;
-			var historicalOverlay;
-			  function initialize() {
-			    var myLatLng = {lat: 39.279024, lng: -76.565706};
+		    var mapCanvas = document.getElementById('map');
+		    var mapOptions = {
+		      zoom: 17,
+		      mapTypeId: google.maps.MapTypeId.ROADMAP,
+		      center: new google.maps.LatLng(39.278900, -76.568170),
+		      scrollwheel: false,
+		      draggable: false,
+		      disableDefaultUI: true
+		    };
+		    var iconBase = '<?php echo esc_url( get_template_directory_uri() ) ?>/images/';
 
-			    var mapCanvas = document.getElementById('map');
-			    var mapOptions = {
-			      zoom: 17,
-			      mapTypeId: google.maps.MapTypeId.ROADMAP,
-			      center: new google.maps.LatLng(39.278900, -76.568170),
-						scrollwheel: false,
-						draggable: false,
-						disableDefaultUI: true
-			    }
-					var iconBase = '<?php echo esc_url( get_template_directory_uri() ) ?>/images/';
+		    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+		            var marker = new google.maps.Marker({
+		                map: map,
+		                position: myLatLng,
+		                icon: iconBase + 'map-marker.png',
+		                title: 'Gunther & Co.'
+		    });
 
-			    var map = new google.maps.Map(mapCanvas, mapOptions);
-			            var marker = new google.maps.Marker({
-			                map: map,
-			                position: myLatLng,
-											icon: iconBase + 'map-marker.png',
-			                title: 'Gunther & Co.'
-			    });
-					bounds = new google.maps.LatLngBounds(
-					  new google.maps.LatLng(-84.999999, -179.999999),
-					  new google.maps.LatLng(84.999999, 179.999999));
+		    bounds = new google.maps.LatLngBounds(
+		      new google.maps.LatLng(-84.999999, -179.999999),
+		      new google.maps.LatLng(84.999999, 179.999999));
 
-					rect = new google.maps.Rectangle({
-					    bounds: bounds,
-					    fillColor: color,
-					    fillOpacity: 0.5,
-					    strokeWeight: 0,
-					    map: map
-					});
-			  }
-			  google.maps.event.addDomListener(window, 'load', initialize);
-			</script>
+		    rect = new google.maps.Rectangle({
+		        bounds: bounds,
+		        fillColor: color,
+		        fillOpacity: 0.5,
+		        strokeWeight: 0,
+		        map: map
+		    });
+
+				if ((window.innerWidth < 850))  {
+					var center = map.getCenter();
+					var myLatLng = {lat: 39.279024, lng: -76.565706};
+	 			 google.maps.event.trigger(map, "resize");
+	 			 map.setCenter(myLatLng);
+    	}	;
+
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+
+			google.maps.event.addDomListener(window, "resize", function() {
+				if ((window.innerWidth < 710))  {
+					var center = map.getCenter();
+					var myLatLng = {lat: 39.279024, lng: -76.565706};
+	 			 google.maps.event.trigger(map, "resize");
+	 			 map.setCenter(myLatLng);
+    	}
+			else{
+				var center = new google.maps.LatLng(39.278900, -76.568170);
+			 google.maps.event.trigger(map, "resize");
+			 map.setCenter(center);
+			}	;
+
+		 	});
+
+		</script>
+
+	<?php endif; ?>
 
 		<?php wp_head(); ?>
 	</head>

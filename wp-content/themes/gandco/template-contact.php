@@ -14,6 +14,8 @@ get_header(); ?>
 
 		<?php	get_template_part( 'template-parts/content-banner-map' ); ?>
 
+		<div id="content-block">
+
 		<div class="cta-section">
 
 			<a href="#"><span>Make Reservations Today</span></a>
@@ -34,7 +36,7 @@ get_header(); ?>
 
 						<h2 class="location-title">Baltimore</h2>
 
-					</header><!-- .entry-header -->
+					</header>
 
 					<p><span>P:</span>443-869-6874</p>
 
@@ -56,11 +58,10 @@ get_header(); ?>
 
 					<?php
 
-					// Start the loop.
 					while ( have_posts() ) : the_post();
-						// Include the page content template.
+
 						echo the_content();
-						// End of the loop.
+
 					endwhile;
 					?>
 
@@ -69,6 +70,8 @@ get_header(); ?>
 			</div>
 
 		</div>
+		
+	</div>
 
 	</main><!-- .site-main -->
 

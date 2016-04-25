@@ -18,35 +18,38 @@ get_header(); ?>
     <?php endif ?>
 
 		<div id="content-block">
+
 	    <div class="cta-section" id="cta">
+
 	      <a href="#"><span>Make Reservations Today</span></a>
+
 	    </div>
 
       <div class="container">
 
-  		<?php
-  		// Start the loop.
-  		while ( have_posts() ) : the_post();
+	  		<?php
 
-  			// Include the page content template.
-  			get_template_part( 'template-parts/content', 'home' );
+	  		while ( have_posts() ) : the_post();
 
-  			// End of the loop.
-  		endwhile;
-  		?>
+	  			get_template_part( 'template-parts/content', 'home' );
 
-    </div>
+	  		endwhile;
 
-<?php if (get_field('page_main_banner_secondary')): ?>
+	  		?>
 
-	<?php get_template_part( 'template-parts/content-banner-secondary' ); ?>
+    	</div>
 
-<?php endif; ?>
+			<?php if (get_field('page_main_banner_secondary')): ?>
 
-	</main><!-- .site-main -->
+				<?php get_template_part( 'template-parts/content-banner-secondary' ); ?>
 
+			<?php endif; ?>
+
+
+		</div>
+
+	</main>
+	
 </div>
-</div>
 
-<?php // get_sidebar(); ?>
 <?php get_footer(); ?>

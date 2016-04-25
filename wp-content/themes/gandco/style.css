@@ -258,9 +258,9 @@ small {
   overflow: hidden;
   *zoom: 1;
   text-align: center;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
   color: #fff !important;
   font-weight: 700;
   font-size: .9em;
@@ -997,6 +997,13 @@ input, textarea {
   .sub-menu {
     background: url("images/bg-sub-menu.png") no-repeat;
     margin-top: 1em !important;
+    min-width: 210px;
+    padding-bottom: 1.5em;
+  }
+
+  .main-navigation ul.sub-menu li a {
+    width: 89%;
+    padding-left: 11%;
   }
 }
 @media (min-width: 1300px) {
@@ -1650,6 +1657,7 @@ input, textarea {
 
 #fancybox-title {
   display: none !important;
+  max-height: 1px;
 }
 
 #fancybox-outer {

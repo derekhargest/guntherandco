@@ -61,7 +61,7 @@ get_header(); ?>
 				</div>
 			<?php endif; ?>
 
-			<?php get_template_part( 'template-parts/princepal-list' ); ?>
+			<?php get_template_part( 'template-parts/principal-list' ); ?>
 
 			<?php get_template_part( 'template-parts/staff-list' ); ?>
 

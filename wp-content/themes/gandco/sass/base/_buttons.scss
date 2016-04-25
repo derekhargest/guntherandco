@@ -5,9 +5,9 @@
 	border: 0;
 	@include clearfix;
 	text-align: center;
-	transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+	transition: opacity 200ms ease-in-out;
+   -moz-transition: opacity 200ms ease-in-out;
+   -webkit-transition: opacity 200ms ease-in-out;
 	 color: #fff !important;
 	 font-weight: 700;
 	 font-size: .9em;

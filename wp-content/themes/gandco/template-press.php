@@ -9,27 +9,28 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+
 	<main id="main" class="site-main" role="main">
 
-<?php if (get_field('page_main_banner')): ?>
+		<?php if (get_field('page_main_banner')): ?>
 
-	<?php get_template_part( 'template-parts/content-banner' ); ?>
+			<?php get_template_part( 'template-parts/content-banner' ); ?>
 
-<?php endif ?>
+		<?php endif ?>
 
-<div id="content-block">
+		<div id="content-block">
 
-<div class="cta-section">
-	<a href="#"><span>Make Reservations Today</span></a>
-</div>
+			<div class="cta-section">
 
-		<?php get_template_part( 'template-parts/press', 'list' ); ?>
+				<a href="#"><span>Make Reservations Today</span></a>
 
-</div><!-- .content-area -->
+			</div>
+
+			<?php get_template_part( 'template-parts/press', 'list' ); ?>
+
+		</div><!-- .content-area -->
 
 	</main><!-- .site-main -->
-
-</div>
 
 </div>
 

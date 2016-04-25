@@ -21,33 +21,42 @@ get_header(); ?>
 		<div id="content-block">
 
 			<div class="cta-section">
+
 				<a href="#"><span>Make Reservations Today</span></a>
+				
 			</div>
 
 			<?php
-			// Start the loop.
+
 			while ( have_posts() ) : the_post();
 
-				// Include the page content template.
 				get_template_part( 'template-parts/content', 'page' );
 
-				// End of the loop.
 			endwhile;
+
 			?>
 
-		<div id="menus">
-			<div class="content-container">
-				<h3>Our Menus</h3>
-				<a href="#" class="menu-link">Brunch Menu<span class="icon icon-download"></span></a>
-				<a href="#" class="menu-link last">Drinks Menu<span class="icon icon-download"></span></a>
-				<a href="#" class="menu-link">Lunch Menu<span class="icon icon-download"></span></a>
-				<a href="#" class="menu-link last">Dinner Menu<span class="icon icon-download"></span></a>
+			<div id="menus">
+
+				<div class="content-container">
+
+					<h3>Our Menus</h3>
+
+					<a href="#" class="menu-link">Brunch Menu<span class="icon icon-download"></span></a>
+
+					<a href="#" class="menu-link last">Drinks Menu<span class="icon icon-download"></span></a>
+
+					<a href="#" class="menu-link">Lunch Menu<span class="icon icon-download"></span></a>
+
+					<a href="#" class="menu-link last">Dinner Menu<span class="icon icon-download"></span></a>
+
+				</div>
+
 			</div>
-		</div>
 
-		</main><!-- .site-main -->
+		</div><!-- .content-area -->
 
-	</div><!-- .content-area -->
+	</main><!-- .site-main -->
 
 </div>
 

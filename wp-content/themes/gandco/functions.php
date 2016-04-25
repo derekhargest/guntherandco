@@ -4,11 +4,13 @@
 	update_option('siteurl','localhost:8888/gandco');
 	update_option('home','localhost:8888/gandco');
 
-	function theme_name_scripts() {
+	function gandco_scripts() {
 		wp_enqueue_style( 'style-name', get_stylesheet_uri() );
 	}
 
 	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+
+	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/theme.js', array ( 'jquery' ), 1.12, true);
 
 	function register_my_menu() {
 		register_nav_menu('header-menu',__( 'Main Navigation' ));
@@ -45,5 +47,6 @@
 	add_theme_support( 'post-thumbnails' );
 
 	wp_deregister_script('jquery');
-wp_register_script('jquery', '', '', '', true);
+
+	wp_register_script('jquery', '', '', '', true);
 ?>

@@ -9,55 +9,56 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+
 	<main id="main" class="site-main" role="main">
 
-	<?php if (get_field('page_main_banner')): ?>
+		<?php if (get_field('page_main_banner')): ?>
 
-		<?php get_template_part( 'template-parts/content-banner-notitle' ); ?>
+			<?php get_template_part( 'template-parts/content-banner-notitle' ); ?>
 
-	<?php endif ?>
+		<?php endif ?>
 
-	<div id="content-block">
+		<div id="content-block">
 
-		<div class="cta-section">
-			<a href="#"><span>Make Reservations Today</span></a>
-		</div>
+			<div class="cta-section">
 
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+				<a href="#"><span>Make Reservations Today</span></a>
 
-			// Include the page content template.
-			get_template_part( 'template-parts/content', 'page' );
+			</div>
 
-			// End of the loop.
-		endwhile;
-		?>
+			<?php
 
-		<div id="gallery">
-			<div class="content-container">
+			while ( have_posts() ) : the_post();
 
-				<?php if ( is_active_sidebar( 'gallery_photos' ) ) : ?>
-					<?php dynamic_sidebar( 'gallery_photos' ); ?>
-				<?php endif; ?>
+				get_template_part( 'template-parts/content', 'page' );
 
-				<div class="gallery-content">
-					<p>
-						<a href="<?php echo home_url(); ?>/contact-us">Contact us</a> today to discuss your <br />special Private Dining event at <br /> Gunther &amp; Co.
-					</p>
+			endwhile;
+			?>
+
+			<div id="gallery">
+
+				<div class="content-container">
+
+					<?php if ( is_active_sidebar( 'gallery_photos' ) ) : ?>
+
+						<?php dynamic_sidebar( 'gallery_photos' ); ?>
+
+					<?php endif; ?>
+
+					<div class="gallery-content">
+
+						<p><a href="<?php echo home_url(); ?>/contact-us">Contact us</a> today to discuss your <br />special Private Dining event at <br /> Gunther &amp; Co.</p>
+
+					</div>
+
 				</div>
 
 			</div>
 
 		</div>
 
-</main><!-- .site-main -->
-
+	</main>
 
 </div>
-
-</div><!-- .content-area -->
-
-<?php // get_sidebar(); ?>
 
 <?php get_footer(); ?>
