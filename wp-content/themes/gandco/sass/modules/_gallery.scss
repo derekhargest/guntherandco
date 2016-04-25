@@ -18,11 +18,16 @@
 		width: 100%;
 		height: auto;
 		margin-right: 3.8461%;
+    opacity: 1;
+    transition: opacity 100ms ease-in-out;
 		img{
 			width: 100%;
 			height: auto;
 			border: 0;
 		}
+    &:hover{
+      opacity: .75;
+    }
 	}
 	.gallery-content{
 		float: left;
@@ -52,10 +57,33 @@
 	}
 }
 
+#fancybox-title{
+  display: none !important;
+}
+
+#fancybox-outer{
+  background: #f2f2f2;
+}
+
+#fancybox-close{
+  background: transparent url('images/fancybox-close.png') no-repeat !important;
+
+}
+
+#fancybox-right-ico{
+  background: transparent url('images/fancybox-right.png') no-repeat !important;
+
+}
+
+#fancybox-left-ico{
+  background: transparent url('images/fancybox-left.png') no-repeat !important;
+
+}
+
 @media (min-width: 835px){
 	#gallery .ngg-fancybox{
 		width: 30.7692%;
-		margin-bottom: 1.47em;
+		margin-bottom: 3.35%;
 	}
 
 	.ngg-fancybox:nth-child(4), .ngg-fancybox:nth-child(10){
@@ -75,7 +103,7 @@
 
 @media (min-width: 1195px){
 	#gallery .ngg-fancybox{
-		margin-bottom: 2.86em;
+		margin-bottom: 3.35%;
 	}
 
 	.ngg-widget.entry-content{

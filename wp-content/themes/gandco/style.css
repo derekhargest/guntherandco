@@ -801,8 +801,9 @@ input, textarea {
 }
 
 .slicknav_btn {
-  padding: 0 4% 0 4% !important;
+  padding: 0 4% 0 0 !important;
   display: table;
+  text-decoration: none;
 }
 .slicknav_btn .slicknav_icon {
   display: table-cell;
@@ -817,6 +818,22 @@ input, textarea {
 .slicknav_btn {
   padding: 3.5% 5% 0.438em 0.625em;
   font-size: 1.25em;
+}
+
+.slicknav_menu .slicknav_menutxt {
+  text-shadow: none;
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: 1.25%;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: .85em;
+}
+
+.slicknav_btn .slicknav_icon {
+  padding-left: 7px;
 }
 
 .mobile-navigation {
@@ -845,13 +862,13 @@ input, textarea {
   cursor: default;
 }
 .main-navigation ul.menu > li a:hover {
-  color: #e45d50;
+  color: rgba(0, 0, 3, 0.65);
 }
 .main-navigation ul.menu > li a {
-  -webkit-transition: all .25s ease-in-out;
-  -moz-transition: all .25s ease-in-out;
-  -ms-transition: all .25s ease-in-out;
-  -o-transition: all .25s ease-in-out;
+  -webkit-transition: color 100ms ease-in-out;
+  -moz-transition: color 100ms ease-in-out;
+  -ms-transition: color 100ms ease-in-out;
+  -o-transition: color 100ms ease-in-out;
   color: #000003;
 }
 .main-navigation ul.menu > li:last-child {
@@ -908,7 +925,7 @@ input, textarea {
   font-weight: 600 !important;
 }
 .sub-menu li a:hover {
-  background: #ccc;
+  background: #e4e4e4;
 }
 
 .main-navigation ul.sub-menu li {
@@ -919,7 +936,9 @@ input, textarea {
   display: block;
 }
 .main-navigation ul.sub-menu li a:hover {
-  background: #ccc;
+  background: #e4e4e4;
+  color: #382d25;
+  opacity: .65;
 }
 
 .slicknav_menu ul li a a {
@@ -948,6 +967,10 @@ input, textarea {
 
   .slicknav_btn {
     padding: 2.25% 5% 0.438em 0.625em;
+  }
+
+  .slicknav_btn .slicknav_icon {
+    padding-left: 10px;
   }
 }
 @media (min-width: 1140px) {
@@ -1043,6 +1066,12 @@ input, textarea {
   font-size: 1.65em;
   text-align: center;
 }
+.site-footer .footer-item a {
+  transition: opacity 100ms ease-in-out;
+}
+.site-footer .footer-item a:hover {
+  opacity: .65;
+}
 .site-footer .footer-item address {
   line-height: 1.5em;
 }
@@ -1062,9 +1091,14 @@ input, textarea {
   font: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   -webkit-appearance: none;
   letter-spacing: .05em;
+  transition: background-color 100ms ease-in-out;
 }
 .site-footer .button {
   border: 1px solid #fff;
+}
+.site-footer .button:hover {
+  background-color: #fff;
+  color: #382e26 !important;
 }
 
 .footer-content.connect ul li {
@@ -1105,6 +1139,10 @@ input, textarea {
   display: block;
   margin-top: 1em;
   font-size: 1.5em;
+  transition: opacity 100ms ease-in-out;
+}
+.footer-content.address a:hover {
+  opacity: .65;
 }
 .footer-content.address a span {
   margin-right: .5em;
@@ -1156,6 +1194,10 @@ input, textarea {
 .subfooter .social a {
   color: #f2f2f2;
   text-decoration: none;
+  transition: opacity 100ms ease-in-out;
+}
+.subfooter .social a:hover {
+  opacity: .65;
 }
 .subfooter .social a span {
   text-indent: -9999px;
@@ -1178,6 +1220,27 @@ input, textarea {
   .site-footer .container {
     padding-top: 5em;
     padding-bottom: 5em;
+  }
+
+  .subfooter .social {
+    float: none;
+    padding-top: 2em;
+    overflow: hidden;
+    *zoom: 1;
+  }
+  .subfooter .social ul {
+    margin-top: 2em;
+    margin: 0 auto;
+    width: 52%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .subfooter .social ul li {
+    display: block;
+    float: left;
+    width: auto;
+    margin-left: 3.5%;
   }
 }
 @media (min-width: 1140px) {
@@ -1251,21 +1314,19 @@ input, textarea {
     float: right;
     padding-right: 1.666666%;
     margin-top: 0;
-    width: auto;
+    width: 20%;
     padding-top: 0;
   }
   .subfooter .social ul {
     margin-top: 0;
+    width: 100%;
   }
   .subfooter .social ul li {
     display: block;
     float: left;
-    margin-right: 3.5555em;
     width: auto;
     margin-bottom: 0;
-  }
-  .subfooter .social ul li:last-child {
-    margin-right: 3.5555em;
+    margin-left: 0;
   }
   .subfooter .social ul li span {
     font-size: 37px;
@@ -1551,11 +1612,16 @@ input, textarea {
   width: 100%;
   height: auto;
   margin-right: 3.8461%;
+  opacity: 1;
+  transition: opacity 100ms ease-in-out;
 }
 #gallery .ngg-fancybox img {
   width: 100%;
   height: auto;
   border: 0;
+}
+#gallery .ngg-fancybox:hover {
+  opacity: .75;
 }
 #gallery .gallery-content {
   float: left;
@@ -1582,10 +1648,30 @@ input, textarea {
   display: block;
 }
 
+#fancybox-title {
+  display: none !important;
+}
+
+#fancybox-outer {
+  background: #f2f2f2;
+}
+
+#fancybox-close {
+  background: transparent url("images/fancybox-close.png") no-repeat !important;
+}
+
+#fancybox-right-ico {
+  background: transparent url("images/fancybox-right.png") no-repeat !important;
+}
+
+#fancybox-left-ico {
+  background: transparent url("images/fancybox-left.png") no-repeat !important;
+}
+
 @media (min-width: 835px) {
   #gallery .ngg-fancybox {
     width: 30.7692%;
-    margin-bottom: 1.47em;
+    margin-bottom: 3.35%;
   }
 
   .ngg-fancybox:nth-child(4), .ngg-fancybox:nth-child(10) {
@@ -1600,7 +1686,7 @@ input, textarea {
 }
 @media (min-width: 1195px) {
   #gallery .ngg-fancybox {
-    margin-bottom: 2.86em;
+    margin-bottom: 3.35%;
   }
 
   .ngg-widget.entry-content .ngg-fancybox {
@@ -1674,6 +1760,10 @@ input, textarea {
   font-size: 1.5em;
   font-weight: 600;
   letter-spacing: 1.75px;
+  transition: opacity 100ms ease-in-out;
+}
+.contact-content a.directions:hover {
+  opacity: .75;
 }
 
 .contact-content-right {
@@ -1717,6 +1807,10 @@ input, textarea {
   font-size: 1.333em;
   line-height: 1.25em;
   letter-spacing: 1px;
+  transition: opacity 100ms ease-in-out;
+}
+.site-main.contact #nf_submit_1 input:hover {
+  opacity: .75;
 }
 
 .ninja-forms-required-items {
@@ -1944,6 +2038,13 @@ input, textarea {
     height: auto;
   }
 }
+#press .content-container a {
+  transition: opacity 100ms ease-in-out;
+}
+#press .content-container a:hover {
+  opacity: .85;
+}
+
 #press {
   background: #f2f2f2;
   padding-bottom: 4.94444em;

@@ -22,6 +22,12 @@
       font-size: 1.65em;
       text-align: center;
     }
+    a{
+      transition: opacity 100ms ease-in-out;
+      &:hover{
+        opacity: .65;
+      }
+    }
     address{
       line-height: 1.5em;
     }
@@ -44,9 +50,14 @@
   	font: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
   	-webkit-appearance: none;
   	letter-spacing: .05em;
+    transition: background-color 100ms ease-in-out;
   }
   .button{
     border: 1px solid #fff;
+    &:hover{
+      background-color: #fff;
+      color: #382e26 !important;
+    }
   }
 }
 
@@ -91,6 +102,10 @@
   display: block;
   margin-top: 1em;
   font-size: 1.5em;
+  transition: opacity 100ms ease-in-out;
+  &:hover{
+    opacity: .65;
+  }
   span{
     margin-right: .5em;
   }
@@ -140,6 +155,10 @@
    a{
     color: #f2f2f2;
     text-decoration: none;
+    transition: opacity 100ms ease-in-out;
+    &:hover{
+      opacity: .65;
+    }
     span{
       text-indent: -9999px;
     }
@@ -166,8 +185,27 @@
     padding-top: 5em;
     padding-bottom: 5em;
   }
-}
 
+  .subfooter .social{
+      float: none;
+      padding-top: 2em;
+      @include clearfix;
+      ul{
+        margin-top: 2em;
+        margin: 0 auto;
+        width: 52%;
+        display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+        li{
+          display: block;
+          float: left;
+          width: auto;
+          margin-left: 3.5%;
+  }
+}
+}
+}
 
 @media (min-width: 1140px){
   .footer-content.updated{
@@ -241,19 +279,17 @@
       float: right;
       padding-right: 1.666666%;
       margin-top: 0;
-      width: auto;
+      width: 20%;
       padding-top: 0;
       ul{
         margin-top: 0;
-        li{
+        width: 100%;
+      li{
           display: block;
           float: left;
-          margin-right: 3.5555em;
           width: auto;
           margin-bottom: 0;
-          &:last-child{
-            margin-right: 3.5555em;
-          }
+          margin-left: 0;
           span {
             font-size: 37px;
           }

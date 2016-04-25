@@ -78,7 +78,8 @@
 		$('#mobile-menu .menu').slicknav({
 			label: '',
 			prependTo: '#mobile-menu-location',
-			duration: '1000'
+			duration: '1000',
+			label: 'Menu',
 		});
 	});
 </script>

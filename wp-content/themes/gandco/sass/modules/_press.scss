@@ -1,3 +1,10 @@
+#press .content-container a{
+  transition: opacity 100ms ease-in-out;
+  &:hover{
+    opacity: .85;
+  }
+}
+
 #press{
   background: #f2f2f2;
   padding-bottom: 4.94444em;

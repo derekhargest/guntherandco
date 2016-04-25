@@ -51,12 +51,13 @@
 }
 
 .slicknav_btn{
-	padding: 0 4% 0 4% !important;
+	padding: 0 4% 0 0 !important;
 	display: table;
+	text-decoration: none;
 	.slicknav_icon{
 		display: table-cell;
     vertical-align: middle;
-    float: none
+    float: none;
 	}
 }
 
@@ -69,6 +70,21 @@
 	font-size: 1.25em;
 }
 
+.slicknav_menu .slicknav_menutxt{
+	text-shadow: none;
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+	margin-right: 1.25%;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: .85em;
+}
+
+.slicknav_btn .slicknav_icon{
+	padding-left: 7px;
+}
 .mobile-navigation{
 	display: none;
 }
@@ -95,13 +111,13 @@
 			cursor: default;
 		}
 		a:hover {
-		 color: rgba(228, 93, 80, 1);
+		 color: rgba(0, 0, 3, .65);
 	 }
 		a{
-			-webkit-transition: all .25s ease-in-out;
-		-moz-transition: all .25s ease-in-out;
-		-ms-transition: all .25s ease-in-out;
-		-o-transition: all .25s ease-in-out;
+			-webkit-transition: color 100ms ease-in-out;
+		-moz-transition: color 100ms ease-in-out;
+		-ms-transition: color 100ms ease-in-out;
+		-o-transition: color 100ms ease-in-out;
 		color: $c-gc_black;
 
 		}
@@ -164,7 +180,7 @@
 		line-height: 2em;
 		font-weight: 600 !important;
 		&:hover{
-			background: #ccc;
+			background: #e4e4e4;
 		}
 	}
 }
@@ -175,7 +191,9 @@
 		width: 10.127em;
 		display: block;
 		&:hover{
-			background: #ccc;
+			background: #e4e4e4;
+			color: $c-text-color;
+			opacity: .65;
 		}
 	}
 }
@@ -214,6 +232,9 @@
 	}
 	.slicknav_btn{
 		padding: 2.25% 5% 0.438em 0.625em;
+	}
+	.slicknav_btn .slicknav_icon{
+		padding-left: 10px;
 	}
 }
 
