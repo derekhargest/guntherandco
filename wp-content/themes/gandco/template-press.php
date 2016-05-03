@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php if (get_field('page_main_banner')): ?>
 
-			<?php get_template_part( 'template-parts/content-banner' ); ?>
+			<?php get_template_part( 'template-parts/content-banner-notitle' ); ?>
 
 		<?php endif ?>
 
