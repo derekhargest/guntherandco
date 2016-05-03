@@ -1,3 +1,16 @@
+/*!
+ 
+Theme Name: Gunther & Co. Default Theme
+Theme URI: #
+Description: Default theme for Gunther & Co.
+Version: 1.0
+Author: Derek Hargest
+Author URI: http://www.guntherandco.com
+License: GPL
+License URI: License.txt
+Tags: responsive-layout, post-formats
+ 
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,19 +67,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*!
- 
-Theme Name: Gunther & Co. Default Theme
-Theme URI: #
-Description: Default theme for Gunther & Co.
-Version: 1.0
-Author: Derek Hargest
-Author URI: http://www.guntherandco.com
-License: GPL
-License URI: License.txt
-Tags: responsive-layout, post-formats
- 
-*/
 @font-face {
   font-family: 'fonticons';
   src: url("assets/fonts/fonticons.eot?3ffr3y");

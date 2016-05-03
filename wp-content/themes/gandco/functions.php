@@ -1,14 +1,10 @@
 <?php
 
-
-	update_option('siteurl','localhost:8888/gandco');
-	update_option('home','localhost:8888/gandco');
-
 	function gandco_scripts() {
 		wp_enqueue_style( 'style-name', get_stylesheet_uri() );
 	}
 
-	add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
+	add_action( 'wp_enqueue_scripts', 'gandco_scripts' );
 
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/theme.js', array ( 'jquery' ), 1.12, true);
 

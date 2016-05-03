@@ -1,10 +1,14 @@
 // Screen
 // ======
+
+@import "vars";
+
+@import "theme_info";
+
 @import "compass";
 @import "compass/reset";
 
-@import "vars";
-@import "theme_info";
+
 
 @import "base/grids";
 @import "base/typography";
