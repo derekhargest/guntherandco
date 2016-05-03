@@ -63,7 +63,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/principal-list' ); ?>
 
-			<?php get_template_part( 'template-parts/staff-list' ); ?>
+			<?php // get_template_part( 'template-parts/staff-list' ); ?>
 
 			</div>
 		</div><!-- .content-area -->

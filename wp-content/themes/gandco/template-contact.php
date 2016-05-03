@@ -48,7 +48,7 @@ get_header(); ?>
 						<span class="icon icon-location-icon"></span> <a href="#" class="directions">Directions</a>
 					</div>
 
-					<p class="parking-info">Complimentary valet and street parking are available. More text here if neccessary getting into parking specifics.</p>
+					<p class="parking-info">Complimentary valet and street parking are available.</p>
 
 					<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-image.jpg" alt="<?php bloginfo( 'name' ); ?> Location">
 
