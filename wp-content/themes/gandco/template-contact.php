@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<div class="cta-section">
 
-			<a href="#"><span>Make Reservations Today</span></a>
+			<a href="http://www.opentable.com/single.aspx?rid=212593&restref=212593"><span>Make Reservations Today</span></a>
 
 		</div>
 
@@ -70,7 +70,7 @@ get_header(); ?>
 			</div>
 
 		</div>
-		
+
 	</div>
 
 	</main><!-- .site-main -->

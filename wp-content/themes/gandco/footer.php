@@ -56,7 +56,7 @@
 
 						<li><a href="<?php echo home_url(); ?>/contact-us"><span class="icon icon-phone-icon"></span> Contact Us</a></li>
 
-						<li><a href="<?php echo home_url(); ?>/contact-us"><span class="icon icon-icon-star"></span> Make Reservation</a></li>
+						<li><a href="http://www.opentable.com/single.aspx?rid=212593&restref=212593"><span class="icon icon-icon-star"></span> Make Reservation</a></li>
 
 					</ul>
 
