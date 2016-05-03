@@ -42,13 +42,29 @@ get_header(); ?>
 
 					<h3>Our Menus</h3>
 
-					<a href="#" class="menu-link">Brunch Menu<span class="icon icon-download"></span></a>
+					<?php if (get_field('brunch_menu')): ?>
 
-					<a href="#" class="menu-link last">Drinks Menu<span class="icon icon-download"></span></a>
+						<a href="<?php echo the_field('brunch_menu'); ?>" class="menu-link">Brunch Menu<span class="icon icon-download"></span></a>
 
-					<a href="#" class="menu-link">Lunch Menu<span class="icon icon-download"></span></a>
+					<?php endif; ?>
 
-					<a href="#" class="menu-link last">Dinner Menu<span class="icon icon-download"></span></a>
+					<?php if (get_field('drinks_menu')): ?>
+
+						<a href="<?php echo the_field('drinks_menu'); ?>" class="menu-link last">Drinks Menu<span class="icon icon-download"></span></a>
+
+					<?php endif; ?>
+
+					<?php if (get_field('lunch_menu')): ?>
+
+						<a href="<?php echo the_field('lunch_menu'); ?>" class="menu-link">Lunch Menu<span class="icon icon-download"></span></a>
+
+					<?php endif; ?>
+
+					<?php if (get_field('dinner_menu')): ?>
+
+						<a href="<?php echo the_field('dinner_menu'); ?>" class="menu-link last">Dinner Menu<span class="icon icon-download"></span></a>
+
+					<?php endif; ?>
 
 				</div>
 
