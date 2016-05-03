@@ -47,7 +47,7 @@ get_header(); ?>
 
 					<div class="gallery-content">
 
-						<p><a href="<?php echo home_url(); ?>/contact-us">Contact us</a> today to discuss your <br />special Private Dining event at <br /> Gunther &amp; Co.</p>
+						<p><a href="<?php echo home_url(); ?>/contact-us">Make a reservation today!</a></p>
 
 					</div>
 
