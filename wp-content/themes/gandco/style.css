@@ -120,6 +120,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "\e907";
 }
 
+.icon-menu-icon:before {
+  content: "\e908";
+}
+
 html {
   font: 45%/1.5 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -1130,9 +1134,21 @@ input, textarea {
 
 .footer-content.hours p {
   line-height: 1.5em;
+  float: left;
+  margin-bottom: 1em;
+  text-align: center;
+  width: 100%;
 }
 .footer-content.hours .hour {
   margin-bottom: 1.75em;
+  float: left;
+}
+.footer-content.hours .menu-hours-link {
+  font-size: 1.25em;
+  display: block;
+  width: 100%;
+  float: left;
+  margin-bottom: 1em;
 }
 
 .footer-content.updated {
@@ -1289,8 +1305,12 @@ input, textarea {
     text-align: left;
     font-size: 1.40em;
   }
-  .site-footer .footer-item p, .site-footer .footer-item address, .site-footer .footer-item a {
+  .site-footer .footer-item address, .site-footer .footer-item a {
     font-size: 1.30em;
+    text-align: left;
+  }
+  .site-footer .footer-item p {
+    font-size: 1em;
     text-align: left;
   }
   .site-footer .footer-item .connect a {
@@ -1313,6 +1333,10 @@ input, textarea {
   }
   .site-footer .footer-item.last .footer-content {
     border: 0;
+  }
+
+  .footer-content.hours p {
+    text-align: left;
   }
 
   .footer-content.address a {
@@ -1354,7 +1378,12 @@ input, textarea {
 
   .footer-content {
     border-right: 1px solid #acacac;
-    min-height: 230px;
+    min-height: 270px;
+  }
+}
+@media (min-width: 1340px) {
+  .footer-content.hours p {
+    font-size: 1.30em;
   }
 }
 #banner {

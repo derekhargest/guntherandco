@@ -73,9 +73,22 @@
 .footer-content.hours{
   p{
     line-height: 1.5em;
+    float: left;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+
   }
   .hour{
     margin-bottom: 1.75em;
+    float: left;
+  }
+  .menu-hours-link{
+    font-size: 1.25em;
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 1em;
   }
 }
 
@@ -230,8 +243,12 @@
         text-align: left;
         font-size: 1.40em;
       }
-      p, address, a{
+      address, a{
         font-size: 1.30em;
+        text-align: left;
+      }
+      p{
+        font-size: 1em;
         text-align: left;
       }
       .connect{
@@ -259,6 +276,9 @@
         }
       }
     }
+  }
+  .footer-content.hours p{
+    text-align: left;
   }
   .footer-content.address a{
     text-align: left;
@@ -299,6 +319,13 @@
   }
   .footer-content{
     border-right: 1px solid #acacac;
-    min-height: 230px;
+    min-height: 270px;
   }
+}
+
+@media (min-width: 1340px){
+
+.footer-content.hours p{
+  font-size: 1.30em;
+}
 }

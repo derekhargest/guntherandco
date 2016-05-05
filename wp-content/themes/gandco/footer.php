@@ -6,19 +6,25 @@
 
 			<div class="footer-content hours">
 
-				<h4>Hours</h4>
+				<h4>Hours of Operation</h4>
 
-				<p>Monday - Thursday</p>
+				<p>M - TH 11:30 am - 11:30 pm</p>
 
-				<p class="hour">5:00 pm - 10:00 pm</p>
 
-				<p>Friday - Saturday</p>
 
-				<p class="hour">5:00 pm - 11:00 pm</p>
+				<p>Friday 11:30 am - 12:30 am</p>
 
-				<p>Sunday</p>
 
-				<p class="hour">5:00 pm - 9:00 pm</p>
+
+				<p>Saturday 11:30 am - 12:00 am</p>
+
+
+
+				<p>Sunday 11:00 am - 9:00 pm</p>
+
+
+
+				<a href="<?php echo home_url(); ?>/menus" class="menu-hours-link"><span class="icon icon-menu-icon"></span> Menu Schedule</a>
 
 			</div>
 
