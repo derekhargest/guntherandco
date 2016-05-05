@@ -49,7 +49,7 @@ get_header(); ?>
 					<div class="content-container secondary">
 						<div class="content-title">
 							<header class="entry-header">
-								<h1 class="entry-title">
+								<h2 class="entry-title">
 									<?php the_field('secondary_content_title'); ?>
 								</h1>
 							</header><!-- .entry-header -->

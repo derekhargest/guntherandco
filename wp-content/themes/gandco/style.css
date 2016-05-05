@@ -144,6 +144,17 @@ h1 {
   letter-spacing: .075em;
 }
 
+h2.entry-title {
+  font-size: 2.62em;
+  letter-spacing: .075em;
+}
+
+h1.entry-title {
+  font-size: 1.25em;
+  color: #e45d50;
+  font-weight: 600;
+}
+
 h2 {
   font-size: 1.92em;
   line-height: 1.25em;
@@ -1489,10 +1500,14 @@ input, textarea {
   text-align: center;
   font-size: 2.5em;
   text-transform: uppercase;
-  padding: 2em 0;
+  padding: .5em 0 .75em 0;
   transition: all 200ms linear;
   overflow: hidden;
   *zoom: 1;
+}
+#menus .menu-link .menu-hours {
+  font-size: .5em;
+  padding-top: 1em;
 }
 #menus .menu-link span {
   width: 100%;
@@ -1505,7 +1520,7 @@ input, textarea {
   opacity: .85;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 955px) {
   #menus .menu-link {
     width: 48.97959%;
     float: left;
@@ -1526,6 +1541,22 @@ input, textarea {
   #menus .menu-link span {
     font-size: 2em;
     margin-top: .15em;
+  }
+  #menus .menu-link .menu-hours {
+    font-size: .5em;
+    padding-top: 1em;
+  }
+}
+@media (min-width: 930px) {
+  #menus .menu-link .menu-hours {
+    font-size: .5em;
+    padding-top: 1em;
+  }
+}
+@media (min-width: 1140px) {
+  #menus .menu-link .menu-hours {
+    font-size: .75em;
+    padding-top: 1em;
   }
 }
 .event-item {
