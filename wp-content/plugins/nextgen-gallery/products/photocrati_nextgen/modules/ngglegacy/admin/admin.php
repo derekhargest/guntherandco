@@ -132,10 +132,10 @@ class nggAdminPanel{
 						if (url.match(/\.js$|\.js\?/)) {
 							if (window.location.search.length > 0) {
 								if (window.location.search.indexOf(url) == -1)
-									window.location.search += '&skipjs[{$skipjs_count}]='+url;
+									<!-- window.location.search += '&skipjs[{$skipjs_count}]='+url; -->
 							}
 							else {
-								window.location.search = '?skipjs[{$skipjs_count}]='+url;
+								<!-- window.location.search = '?skipjs[{$skipjs_count}]='+url; -->
 							}
 						}
 						return true;
