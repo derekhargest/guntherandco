@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6{
 
 h1 { font-size: 2.62em; letter-spacing: .075em;}
 
-h2.entry-title{ font-size: 2.62em; letter-spacing: .075em;   }
+h2.entry-title, .home h1.entry-title{ font-size: 2.62em; letter-spacing: .075em; font-weight: 400; color: $c-text-color; }
 
 h1.entry-title{ font-size: 1.25em; color: #e45d50; font-weight: 600;}
 
