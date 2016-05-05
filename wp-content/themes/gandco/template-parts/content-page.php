@@ -16,8 +16,8 @@
 		<div class="content-title">
 			<header class="entry-header">
 				<h2 class="entry-title">
-					<?php the_title(); ?>
-				</h1>
+					<?php the_field('content_title_1'); ?>
+				</h2>
 			</header><!-- .entry-header -->
 		</div>
 
