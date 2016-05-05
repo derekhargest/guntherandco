@@ -5,7 +5,7 @@ if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You 
 /*
  * Plugin Name: NextGEN Plus by Photocrati
  * Description: A premium add-on for NextGEN Gallery with beautiful new gallery displays and a fullscreen, responsive Pro Lightbox with social sharing and commenting.
- * Version: 1.3.13
+ * Version: 1.3.14
  * Plugin URI: http://www.nextgen-gallery.com
  * Author: Photocrati Media
  * Author URI: http://www.photocrati.com
@@ -33,7 +33,7 @@ class NextGen_Plus
         if ($this->is_not_activating()) {
             define('NGG_PLUS_PLUGIN_BASENAME', plugin_basename(__FILE__));
             define('NGG_PLUS_MODULE_URL', plugins_url(path_join(basename(dirname(__FILE__)), 'modules')));
-            define('NGG_PLUS_PLUGIN_VERSION', '1.3.13');
+            define('NGG_PLUS_PLUGIN_VERSION', '1.3.14');
 
             if (class_exists('C_Component_Registry') && did_action('load_nextgen_gallery_modules')) {
                 add_action('init', array(get_class(), 'load_product'));

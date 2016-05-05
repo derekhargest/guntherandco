@@ -42,19 +42,15 @@
                     $(image).css({
                         width:  options._nggThumbnailWidth  + 'px',
                         height: options._nggThumbnailHeight + 'px'
-                    }).find('img').css({'max-width': options._nggThumbnailWidth});
+                    }).find('img').css({
+                        'max-width': options._nggThumbnailWidth,
+                        width:  options._nggThumbnailWidth  + 'px',
+                        height: options._nggThumbnailHeight + 'px'
+                    });
                 });
             } else {
                 // Will be the height of the tallest thumbnail to display
                 options._nggThumbnailHeight = 1;
-
-                // Because Galleria replaces our CSS' 'auto' attribute with an inline width/height:0
-                this.$('thumbnails').find('.galleria-image').each(function(ndx, image) {
-                    $(image).css({
-                        width: 'auto',
-                        height: 'auto'
-                    });
-                });
 
                 // Find the tallest thumbnail
                 for (var i = 0; i <= (this.getDataLength() - 1); i++) {
@@ -67,6 +63,13 @@
                 // Position shorter thumbnails to be vertically centered
                 this.$('thumbnails').find('.galleria-image').each(function(ndx, image) {
                     var cur_h = self._data[ndx].thumb_dimensions.height;
+                    $(image).css({
+                        'width': self._data[ndx].thumb_dimensions.width + 'px',
+                        'height': self._data[ndx].thumb_dimensions.height + 'px'
+                    }).find('img').css({
+                        'width': self._data[ndx].thumb_dimensions.width + 'px',
+                        'height': self._data[ndx].thumb_dimensions.height + 'px'
+                    });
                     if (cur_h < options._nggThumbnailHeight) {
                         $(image).css('top', (options._nggThumbnailHeight - cur_h) / 2);
                     }

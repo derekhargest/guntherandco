@@ -1,6 +1,11 @@
 NextGEN Plus
 by Photocrati Media
 
+= V1.3.14 - 04.26.2016 =
+- Fixed: Navigating to a new image in the Pro Lightbox sometimes using the prior images url when sharing to social media
+- Fixed: Horizontal Filmstrip & Slideshow not displaying ecommerce triggers
+- Fixed: Horizontal Filmstrip not displaying carousel thumbnails with Photocrati-theme
+
 = V1.3.13 - 03.15.2016 =
 * Fixed:    Ensure that modules are compiled and that CSS/JS is minified
 

@@ -51,7 +51,7 @@ class A_Galleria_Controller extends Mixin
     }
     public function index_action($displayed_gallery, $return = FALSE)
     {
-        $params = array('theme' => $displayed_gallery->display_settings['theme'], 'displayed_gallery_id' => $displayed_gallery->id());
+        $params = array('theme' => $displayed_gallery->display_settings['theme'], 'displayed_gallery_id' => $displayed_gallery->id(), 'images' => $displayed_gallery->get_entities());
         $params = $this->object->prepare_display_parameters($displayed_gallery, $params);
         return $this->object->render_view(NGG_PRO_GALLERIA . '#galleria', $params, $return);
     }

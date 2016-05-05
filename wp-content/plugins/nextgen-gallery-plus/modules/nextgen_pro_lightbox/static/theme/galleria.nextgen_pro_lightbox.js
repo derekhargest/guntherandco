@@ -734,8 +734,7 @@
                                 }
 
                                 // update the parent url when a new image has been chosen or the slideshow advances
-                                if (methods.nplModal.is_nextgen_gallery()
-                                    &&  $.nplModal('get_setting', 'enable_routing', false)) {
+                                if (methods.nplModal.is_nextgen_gallery()) {
                                     self.bind('image', this.image);
                                 }
 
@@ -775,11 +774,13 @@
                                         var state = $.nplModal('get_state');
                                         state.image_id = image_id;
                                         $.nplModal('set_state', state);
-                                        $.nplModal(
-                                            'router.navigate',
-                                            $.nplModal('get_setting', 'router_slug') + '/' + $.nplModal('get_state').slug + '/' + image_id + sidebar_string,
-                                            true
-                                        );
+                                        if ($.nplModal('get_setting', 'enable_routing', false)) {
+                                            $.nplModal(
+                                                'router.navigate',
+                                                $.nplModal('get_setting', 'router_slug') + '/' + $.nplModal('get_state').slug + '/' + image_id + sidebar_string,
+                                                true
+                                            );
+                                        }
                                     }
                                 }
                                 methods.nplModal.events._image_ran_once = true;
@@ -1057,9 +1058,9 @@
                         },
                         events: {
                             bind: function() {
-                                self.bind('loadfinish', this.loadfinish);
+                                self.bind('image', this.image);
                             },
-                            loadfinish: function() {
+                            image: function() {
                                 if (methods.nplModal.is_nextgen_gallery()
                                     &&  $.nplModal('get_setting', 'enable_routing', false)
                                     &&  $.nplModal('get_setting', 'enable_sharing', false)) {

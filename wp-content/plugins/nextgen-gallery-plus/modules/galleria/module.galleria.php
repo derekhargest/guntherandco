@@ -13,7 +13,7 @@ class M_Galleria extends C_Base_Module
             NGG_PRO_GALLERIA,
 			'Galleria',
 			'Provides support for displaying galleries using Galleria Themes',
-            '0.14',
+            '0.15',
 			'http://www.nextgen-gallery.com',
 			'Photocrati Media',
 			'http://www.photocrati.com',

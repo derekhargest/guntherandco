@@ -36,7 +36,14 @@ get_header(); ?>
 		?>
 
 			<div id="gallery">
+				<div class="gallery-content">
+
+					<p><a href="#">Contact us</a> today to discuss your <br />special Private Dining event at <br /> Gunther &amp; Co.</p>
+
+				</div>
 				<div class="content-container">
+
+
 
 					<?php if ( is_active_sidebar( 'gallery_private_dining' ) ) : ?>
 
@@ -44,11 +51,7 @@ get_header(); ?>
 
 					<?php endif; ?>
 
-					<div class="gallery-content">
 
-						<p><a href="#">Contact us</a> today to discuss your <br />special Private Dining event at <br /> Gunther &amp; Co.</p>
-
-					</div>
 
 				</div>
 

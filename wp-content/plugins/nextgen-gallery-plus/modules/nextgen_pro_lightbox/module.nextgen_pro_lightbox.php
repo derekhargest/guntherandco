@@ -21,7 +21,7 @@ class M_NextGen_Pro_Lightbox extends C_Base_Module
             'photocrati-nextgen_pro_lightbox',
             'NextGEN Pro Lightbox',
             'Provides a lightbox with integrated commenting, social sharing, and e-commerce functionality',
-            '0.41',
+            '0.42',
             'http://www.nextgen-gallery.com',
             'Photocrati Media',
             'http://www.photocrati.com',

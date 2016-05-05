@@ -603,7 +603,8 @@
                         var gallery = core.methods.get_gallery_from_id(gallery_id);
                         if (gallery !== null) {
                             // the cache may not be filled thanks to a looping, async fetch
-                            if (this.gallery_image_cache[gallery_id].length == gallery.images_list_count) {
+                            if (this.gallery_image_cache[gallery_id].length > 0
+                            &&  this.gallery_image_cache[gallery_id].length == gallery.images_list_count) {
                                 return this.gallery_image_cache[gallery_id];
                             }
 
