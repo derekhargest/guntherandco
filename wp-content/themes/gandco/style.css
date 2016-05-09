@@ -1667,7 +1667,7 @@ input, textarea {
 }
 @media (min-width: 1030px) {
   .event-item {
-    font-size: 1em;
+    font-size: .75em;
   }
 }
 #gallery .content-container {
