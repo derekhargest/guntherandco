@@ -47,8 +47,6 @@ get_header(); ?>
 
 					<div class="gallery-content">
 
-						<p><a href="<?php echo home_url(); ?>/contact-us">Make a reservation today!</a></p>
-
 					</div>
 
 				</div>
