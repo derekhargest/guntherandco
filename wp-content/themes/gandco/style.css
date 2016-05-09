@@ -1710,6 +1710,7 @@ input, textarea {
 
 .gallery-content.content-container {
   margin-top: 0em;
+  max-width: 80%;
 }
 .gallery-content.content-container p {
   text-align: center;
