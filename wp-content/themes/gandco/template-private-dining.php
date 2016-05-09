@@ -46,7 +46,7 @@ get_header(); ?>
 
 
 
-					<?php	echo do_shortcode( '[nggallery id=1]' ); ?>
+					<?php	echo do_shortcode( '[nggallery id=3]' ); ?>
 
 
 

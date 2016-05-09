@@ -45,7 +45,7 @@ get_header(); ?>
 
 					<?php // endif; ?>
 
-				<?php	echo do_shortcode( '[nggallery id=2]' ); ?>
+				<?php	echo do_shortcode( '[nggallery id=4]' ); ?>
 
 					<div class="gallery-content">
 
