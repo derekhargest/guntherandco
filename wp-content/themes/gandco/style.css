@@ -131,6 +131,7 @@ html {
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 1.5625em;
   line-height: 1.825;
   letter-spacing: .0525em;
