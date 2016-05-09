@@ -16,7 +16,7 @@
         </div>
         <div class="entry-content">
           <p><?php the_content(); ?></p>
-          <a href="<?php echo the_field('article_link'); ?>" class="read-more">Read More <span>&rarr;</span></a>
+          <a href="<?php echo the_field('article_link'); ?>" target="_blank" class="read-more">Read More <span>&rarr;</span></a>
         </div><!-- .entry-content -->
       </div>
 
