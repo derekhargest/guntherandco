@@ -1144,7 +1144,7 @@ input, textarea {
   float: left;
 }
 .footer-content.hours .menu-hours-link {
-  font-size: 1.25em;
+  font-size: 1.5em;
   display: block;
   width: 100%;
   float: left;
@@ -1174,7 +1174,7 @@ input, textarea {
   width: 100%;
   display: block;
   margin-top: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
   transition: opacity 100ms ease-in-out;
 }
 .footer-content.address p span {
@@ -1281,6 +1281,10 @@ input, textarea {
     width: 320px;
   }
 
+  .footer-content.hours .menu-hours-link {
+    font-size: 1em;
+  }
+
   .site-footer {
     padding-top: 6.66666em;
   }
@@ -1332,6 +1336,10 @@ input, textarea {
     border: 0;
   }
 
+  .footer-content.address p {
+    font-size: 1.25em;
+  }
+
   .footer-content.hours p {
     text-align: left;
   }
@@ -1381,6 +1389,10 @@ input, textarea {
 @media (min-width: 1340px) {
   .footer-content.hours p {
     font-size: 1.30em;
+  }
+
+  .footer-content.hours .menu-hours-link {
+    font-size: 1.25em;
   }
 }
 #banner {

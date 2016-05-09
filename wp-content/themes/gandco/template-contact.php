@@ -45,12 +45,12 @@ get_header(); ?>
 					<address>3650 Toone Street <br />Brewers Hill <br />Baltimore, MD 21224</address>
 
 					<div class="directions-link">
-						<span class="icon icon-location-icon"></span> <a href="#" class="directions">Directions</a>
+						<span class="icon icon-location-icon"></span> <a href="https://maps.google.com?daddr=3650+Toone+Street+Baltimore+MD+21224" class="directions">Directions</a>
 					</div>
 
 					<!-- <p class="parking-info">Complimentary valet and street parking are available.</p> -->
 					<div class="directions-content">
-						
+
 						<h3>From 95S</h3>
 						<p>Take Exit 57 (O’Donnell St)<br />
 						Turn right onto O’Donnell St.<br />

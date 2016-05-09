@@ -84,7 +84,7 @@
     float: left;
   }
   .menu-hours-link{
-    font-size: 1.25em;
+    font-size: 1.5em;
     display: block;
     width: 100%;
     float: left;
@@ -114,7 +114,7 @@
   width: 100%;
   display: block;
   margin-top: 1em;
-  font-size: 2em;
+  font-size: 1.5em;
   transition: opacity 100ms ease-in-out;
   span{
     margin-right: .5em;
@@ -221,6 +221,9 @@
   .footer-content.updated{
     width: 320px;
   }
+  .footer-content.hours .menu-hours-link{
+    font-size: 1em;
+  }
   .site-footer{
     padding-top: 6.66666em;
     .container{
@@ -274,6 +277,9 @@
       }
     }
   }
+  .footer-content.address p{
+    font-size: 1.25em;
+  }
   .footer-content.hours p{
     text-align: left;
   }
@@ -324,5 +330,8 @@
 
 .footer-content.hours p{
   font-size: 1.30em;
+}
+.footer-content.hours .menu-hours-link{
+  font-size: 1.25em;
 }
 }
