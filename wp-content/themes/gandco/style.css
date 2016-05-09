@@ -1169,18 +1169,15 @@ input, textarea {
   margin-top: 1.2em;
 }
 
-.footer-content.address a {
+.footer-content.address p {
   text-align: center;
   width: 100%;
   display: block;
   margin-top: 1em;
-  font-size: 1.5em;
+  font-size: 2em;
   transition: opacity 100ms ease-in-out;
 }
-.footer-content.address a:hover {
-  opacity: .65;
-}
-.footer-content.address a span {
+.footer-content.address p span {
   margin-right: .5em;
 }
 

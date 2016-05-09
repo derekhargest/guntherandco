@@ -44,7 +44,7 @@
 
 				Baltimore, MD 21224</address>
 
-				<!-- <a href="#"><span class="icon-parking-icon"></span>Parking</a> -->
+				<p>Free Parking</p>
 
 			</div>
 
