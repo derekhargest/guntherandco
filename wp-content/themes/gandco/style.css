@@ -1709,7 +1709,7 @@ input, textarea {
 }
 
 .gallery-content.content-container {
-  margin-top: 2em;
+  margin-top: 0em;
 }
 .gallery-content.content-container p {
   text-align: center;
