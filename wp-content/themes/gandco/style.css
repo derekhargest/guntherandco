@@ -1684,7 +1684,7 @@ input, textarea {
 #gallery .grid-sizer {
   width: 30.7692%;
 }
-#gallery .ngg-fancybox {
+#gallery .ngg-gallery-thumbnail-box {
   margin-bottom: 4em;
   padding-left: 0px;
   float: left;
@@ -1694,13 +1694,18 @@ input, textarea {
   opacity: 1;
   transition: opacity 100ms ease-in-out;
 }
-#gallery .ngg-fancybox img {
+#gallery .ngg-gallery-thumbnail-box img {
   width: 100%;
   height: auto;
   border: 0;
+  padding: 0;
+  margin: 0;
 }
-#gallery .ngg-fancybox:hover {
+#gallery .ngg-gallery-thumbnail-box:hover {
   opacity: .75;
+}
+#gallery .ngg-gallery-thumbnail {
+  width: 100%;
 }
 
 .gallery-content.content-container {
@@ -1716,7 +1721,7 @@ input, textarea {
   padding: 0 !important;
 }
 
-.ngg-fancybox:nth-child(3), .ngg-fancybox:nth-child(5), .ngg-fancybox:nth-child(6), .ngg-fancybox:nth-child(9), .ngg-fancybox:nth-child(11), .ngg-fancybox:nth-child(12) {
+.ngg-gallery-thumbnail-box:nth-child(3), .ngg-gallery-thumbnail-box:nth-child(5), .ngg-gallery-thumbnail-box:nth-child(6), .ngg-gallery-thumbnail-box:nth-child(9), .ngg-gallery-thumbnail-box:nth-child(11), .ngg-gallery-thumbnail-box:nth-child(12) {
   margin-right: 0 !important;
 }
 
@@ -1724,7 +1729,7 @@ input, textarea {
   width: 100%;
   float: none !important;
 }
-.ngg-widget.entry-content .ngg-fancybox {
+.ngg-widget.entry-content .ngg-gallery-thumbnail-box {
   display: block;
 }
 
@@ -1750,12 +1755,12 @@ input, textarea {
 }
 
 @media (min-width: 835px) {
-  #gallery .ngg-fancybox {
+  #gallery .ngg-gallery-thumbnail-box {
     width: 30.7692%;
     margin-bottom: 3.35%;
   }
 
-  .ngg-fancybox:nth-child(4), .ngg-fancybox:nth-child(10) {
+  .ngg-gallery-thumbnail-box:nth-child(4), .ngg-gallery-thumbnail-box:nth-child(10) {
     width: 65.3846% !important;
   }
 }
@@ -1766,11 +1771,11 @@ input, textarea {
   }
 }
 @media (min-width: 1195px) {
-  #gallery .ngg-fancybox {
+  #gallery .ngg-gallery-thumbnail-box {
     margin-bottom: 3.35%;
   }
 
-  .ngg-widget.entry-content .ngg-fancybox {
+  .ngg-widget.entry-content .ngg-gallery-thumbnail-box {
     min-height: 240px;
   }
 }

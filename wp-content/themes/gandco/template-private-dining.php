@@ -46,11 +46,7 @@ get_header(); ?>
 
 
 
-					<?php if ( is_active_sidebar( 'gallery_private_dining' ) ) : ?>
-
-						<?php dynamic_sidebar( 'gallery_private_dining' ); ?>
-
-					<?php endif; ?>
+					<?php	echo do_shortcode( '[nggallery id=1]' ); ?>
 
 
 

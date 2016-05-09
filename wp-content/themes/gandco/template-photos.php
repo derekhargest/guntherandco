@@ -39,11 +39,13 @@ get_header(); ?>
 
 				<div class="content-container">
 
-					<?php if ( is_active_sidebar( 'gallery_photos' ) ) : ?>
+					<?php // if ( is_active_sidebar( 'gallery_photos' ) ) : ?>
 
-						<?php dynamic_sidebar( 'gallery_photos' ); ?>
+						<?php // dynamic_sidebar( 'gallery_photos' ); ?>
 
-					<?php endif; ?>
+					<?php // endif; ?>
+
+				<?php	echo do_shortcode( '[nggallery id=2]' ); ?>
 
 					<div class="gallery-content">
 
