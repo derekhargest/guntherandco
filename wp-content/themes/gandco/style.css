@@ -1709,7 +1709,7 @@ input, textarea {
 }
 
 .gallery-content.content-container {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 .gallery-content.content-container p {
   text-align: center;
@@ -1768,6 +1768,10 @@ input, textarea {
   #gallery .content-container {
     padding-bottom: 3.5em;
     padding-top: 1em;
+  }
+
+  .gallery-content.content-container {
+    margin-top: 4em;
   }
 }
 @media (min-width: 1195px) {

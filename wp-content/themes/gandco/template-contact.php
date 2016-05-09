@@ -51,7 +51,7 @@ get_header(); ?>
 					<!-- <p class="parking-info">Complimentary valet and street parking are available.</p> -->
 					<div class="directions-content">
 
-						<h3>From 95S</h3>
+						<h3>From 95 S</h3>
 						<p>Take Exit 57 (O’Donnell St)<br />
 						Turn right onto O’Donnell St.<br />
 						Make a left at light onto S. Conkling St.<br />
