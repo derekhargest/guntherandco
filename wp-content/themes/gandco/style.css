@@ -1645,7 +1645,7 @@ input, textarea {
 }
 @media (min-width: 770px) {
   .event-item span {
-    margin-right: 10%;
+    margin-right: 2%;
   }
   .event-item .event-content {
     width: 48.97959%;
