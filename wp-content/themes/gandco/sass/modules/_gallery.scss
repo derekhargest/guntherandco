@@ -29,12 +29,13 @@
       opacity: .75;
     }
 	}
-	.gallery-content{
-		float: left;
-		width: 100%;
-		p{
-			text-align: center;
-		}
+}
+
+.gallery-content.content-container{
+	margin-top: 4em;
+	p{
+		text-align: center;
+		font-size: 1.75em;
 	}
 }
 
@@ -97,7 +98,7 @@
 	#gallery{
 		.content-container{
 			padding-bottom: 3.5em;
-			padding-top: 6em;
+			padding-top: 1em;
 		}
 	}
 }

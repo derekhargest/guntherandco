@@ -34,13 +34,14 @@ get_header(); ?>
 
 		endwhile;
 		?>
+			<div class="gallery-content content-container">
+
+				<p>Contact Nancy at <a href="mailto:nancy@guntherandco.com">nancy@guntherandco.com</a> today to discuss your <br />special private dining event at Gunther &amp; Co. </p>
+
+			</div>
 
 			<div id="gallery">
-				<div class="gallery-content">
 
-					<p><a href="#">Contact us</a> today to discuss your <br />special Private Dining event at <br /> Gunther &amp; Co.</p>
-
-				</div>
 				<div class="content-container">
 
 

@@ -44,27 +44,40 @@ get_header(); ?>
 
 					<?php if (get_field('brunch_menu')): ?>
 
-						<a href="<?php echo the_field('brunch_menu'); ?>" class="menu-link">Brunch Menu<span class="icon icon-download"></span><span class="menu-hours">Served Saturday & Saturday 11:00 – 3:00</span></a>
-
-					<?php endif; ?>
-
-					<?php if (get_field('drinks_menu')): ?>
-
-						<a href="<?php echo the_field('drinks_menu'); ?>" class="menu-link last">Drinks Menu<span class="icon icon-download"></span><span class="menu-hours">Served Open to Close; Til Midnight Fri/Sat</span></a>
+						<a href="<?php echo the_field('brunch_menu'); ?>" class="menu-link">Brunch<span class="icon icon-download"></span><span class="menu-hours">Saturday & Saturday 11 – 3</span></a>
 
 					<?php endif; ?>
 
 					<?php if (get_field('lunch_menu')): ?>
 
-						<a href="<?php echo the_field('lunch_menu'); ?>" class="menu-link">Lunch Menu<span class="icon icon-download"></span><span class="menu-hours">Served Monday – Saturday 11:30 – 2:30</span></a>
+						<a href="<?php echo the_field('lunch_menu'); ?>" class="menu-link">Lunch<span class="icon icon-download"></span><span class="menu-hours">Monday – Saturday 11:30 – 2:30</span></a>
+
+					<?php endif; ?>
+
+					<?php if (get_field('gunther_menu')): ?>
+
+						<a href="<?php echo the_field('gunther_menu'); ?>" class="menu-link last">Gunther<span class="icon icon-download"></span><span class="menu-hours">Open Til Close</span></a>
 
 					<?php endif; ?>
 
 					<?php if (get_field('dinner_menu')): ?>
 
-						<a href="<?php echo the_field('dinner_menu'); ?>" class="menu-link last">Dinner Menu<span class="icon icon-download"></span><span class="menu-hours">Served Mon - Th 5:00–9:00; Fri & Sat 5:00-10:00</span></a>
+						<a href="<?php echo the_field('dinner_menu'); ?>" class="menu-link">Dinner<span class="icon icon-download"></span><span class="menu-hours">Mon - Th 5–9:30; Fri &amp; Sat 5-10</span></a>
 
 					<?php endif; ?>
+
+					<?php if (get_field('sunday_menu')): ?>
+
+						<a href="<?php echo the_field('dinner_menu'); ?>" class="menu-link">Sunday Supper<span class="icon icon-download"></span><span class="menu-hours">5 - 9</span></a>
+
+					<?php endif; ?>
+
+					<?php if (get_field('drinks_menu')): ?>
+
+						<a href="<?php echo the_field('drinks_menu'); ?>" class="menu-link last">Drinks<span class="icon icon-download"></span><span class="menu-hours">Open Til Close</span></a>
+
+					<?php endif; ?>
+
 
 				</div>
 

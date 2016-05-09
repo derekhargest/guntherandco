@@ -29,7 +29,7 @@
         $date = DateTime::createFromFormat('Ymd', get_field('date'));
           ?>
 
-        <span class="label">Date:</span><p class="date"><?php echo $date->format('m/d/Y'); ?></p>
+        <span class="label">Date:</span><p class="date"><?php echo the_field('date') ?></p>
 
       </div>
 

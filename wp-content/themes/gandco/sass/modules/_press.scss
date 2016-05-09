@@ -20,6 +20,9 @@
       width: 91.2%;
       margin-bottom: 3.6em;
       @include clearfix;
+      h2.entry-title{
+        font-size: 1.95em;
+      }
       p{
         font-size: 2em;
       }

@@ -39,16 +39,16 @@
 @media (min-width: 955px){
 	#menus{
 		.menu-link{
-			@include span(5 of 10);
+			@include span(4 of 12);
 			margin-bottom: .75em;
 			color: #fff;
 			text-decoration: none;
 			text-align: center;
-			font-size: 2em;
+			font-size: 1.5em;
 			text-transform: uppercase;
 			padding: 1.2em 0;
 			&.last{
-				@include span(5 of 10 last);
+				@include span(4 of 12 last);
 			}
 			span{
 				font-size: 2em;
@@ -65,8 +65,8 @@
 @media (min-width: 930px){
 
 #menus .menu-link	.menu-hours{
-		font-size: .5em;
-		padding-top: 1em;
+		font-size: .75em;
+		padding-top: .75em;
 	}
 
 }
