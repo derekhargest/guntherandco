@@ -8,19 +8,19 @@
 
 				<h4>Hours of Operation</h4>
 
-				<p>M - TH 11:30 am - 11:30 pm</p>
+				<p>M - TH 11:30 - 11:30</p>
 
 
 
-				<p>Friday 11:30 am - 12:30 am</p>
+				<p>Friday 11:30 - 12:30</p>
 
 
 
-				<p>Saturday 11 am - 12:30 am</p>
+				<p>Saturday 11 - 12:30</p>
 
 
 
-				<p>Sunday 11:00 am - 10:00 pm</p>
+				<p>Sunday 11:00 - 10:00</p>
 
 
 
