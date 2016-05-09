@@ -16,11 +16,11 @@
 
 
 
-				<p>Saturday 11:30 am - 12:00 am</p>
+				<p>Saturday 11 am - 12:30 am</p>
 
 
 
-				<p>Sunday 11:00 am - 9:00 pm</p>
+				<p>Sunday 11:00 am - 10:00 pm</p>
 
 
 
