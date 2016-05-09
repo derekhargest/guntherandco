@@ -21,6 +21,10 @@
     padding-bottom: 1em;
 		text-align: center;
   }
+	h3{
+		font-size: 1.5em;
+		font-weight: 700;
+	}
   p{
     font-size: 2em;
 		text-align: center;
@@ -47,6 +51,16 @@
     margin-bottom: 1em;
 		text-align: center;
   }
+	.directions-content{
+		margin-top: 2em;
+		p{
+			font-size: 1.25em;
+			text-align: left;
+			max-width: none;
+			margin-bottom: 1.25em;
+		}
+
+	}
   .parking-info{
     margin-top: 3em;
   }

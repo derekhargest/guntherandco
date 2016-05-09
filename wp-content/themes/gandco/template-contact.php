@@ -48,9 +48,32 @@ get_header(); ?>
 						<span class="icon icon-location-icon"></span> <a href="#" class="directions">Directions</a>
 					</div>
 
-					<p class="parking-info">Complimentary valet and street parking are available.</p>
+					<!-- <p class="parking-info">Complimentary valet and street parking are available.</p> -->
+					<div class="directions-content">
+						
+						<h3>From 95S</h3>
+						<p>Take Exit 57 (O’Donnell St)<br />
+						Turn right onto O’Donnell St.<br />
+						Make a left at light onto S. Conkling St.<br />
+						Make first left onto Toone St.<br />
+						Pass restaurant on left and park in lot on right</p>
+
+						<h3>From 95 N</h3>
+						<p>Take Exit 57 (O’Donnell St.)<br />
+						Make left to follow signs to Boston St.<br />
+						Turn right onto S. Conkling St.<br />
+						Make first right onto Toone St.<br />
+						Pass restaurant on left and park in lot on right</p>
+
+						<h3>From Boston St. (Coming from downtown)</h3>
+						<p>Make left on to S. Conkling St.<br />
+						Make first right onto Toone St.<br />
+						Pass restaurant on left and park in lot on right</p>
+
+					</div>
 
 					<img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/location-image.jpg" alt="<?php bloginfo( 'name' ); ?> Location">
+
 
 				</div>
 

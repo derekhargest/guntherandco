@@ -1785,6 +1785,10 @@ input, textarea {
   padding-bottom: 1em;
   text-align: center;
 }
+.contact-content h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
 .contact-content p {
   font-size: 2em;
   text-align: center;
@@ -1810,6 +1814,15 @@ input, textarea {
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
+}
+.contact-content .directions-content {
+  margin-top: 2em;
+}
+.contact-content .directions-content p {
+  font-size: 1.25em;
+  text-align: left;
+  max-width: none;
+  margin-bottom: 1.25em;
 }
 .contact-content .parking-info {
   margin-top: 3em;
@@ -1997,7 +2010,7 @@ input, textarea {
   font-size: 1.75em;
 }
 .principals .principal-item p {
-  font-size: 1.75em;
+  font-size: 1em;
   line-height: 1.5em;
   margin-top: 1.75em;
 }
@@ -2073,7 +2086,7 @@ input, textarea {
     padding-bottom: 0;
   }
   .principals .principal-item p {
-    font-size: 1.75em;
+    font-size: 1em;
   }
   .principals .principal-item:nth-child(2) {
     width: 48.97959%;

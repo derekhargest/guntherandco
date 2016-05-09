@@ -12,7 +12,7 @@
       font-size: 1.75em;
     }
     p{
-      font-size: 1.75em;
+      font-size: 1em;
       line-height: 1.5em;
       margin-top: 1.75em;
     }
@@ -91,7 +91,7 @@
       @include span(5 of 10);
       padding-bottom: 0;
       p{
-        font-size: 1.75em;
+        font-size: 1em;
       }
       &:nth-child(2){
         @include span(5 of 10 last);
