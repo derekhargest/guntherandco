@@ -1,6 +1,6 @@
 <div id="principal-list" class="content-area principal-list">
   <div class="content-container">
-    <h3>At Our Core.</h3>
+    <h3>At Our Core</h3>
     <div class="principals">
         <?php
         $args = array('post_type' => 'staff', 'staff-level' => 'principal');

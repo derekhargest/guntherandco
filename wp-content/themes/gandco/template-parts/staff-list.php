@@ -1,6 +1,6 @@
 <div id="team-list" class="content-area team-list">
   <div class="content-container">
-    <h3>The Team.</h3>
+    <h3>The Team</h3>
     <div class="team">
       <?php
       $args = array('post_type' => 'staff', 'staff-level' => 'staff');
