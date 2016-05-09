@@ -91,7 +91,7 @@
       @include span(5 of 10);
       padding-bottom: 0;
       p{
-        font-size: 1em;
+        font-size: 1.5em;
       }
       &:nth-child(2){
         @include span(5 of 10 last);
