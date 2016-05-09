@@ -2157,7 +2157,6 @@ input, textarea {
   background: #fff;
   padding-bottom: 0;
   margin-bottom: 0;
-  width: 100%;
   overflow: hidden;
   *zoom: 1;
 }
