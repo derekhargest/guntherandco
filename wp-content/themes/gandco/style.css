@@ -1617,13 +1617,13 @@ input, textarea {
 .event-item p {
   font-size: 2.62em;
   margin-bottom: 1em;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 .event-item span {
   display: block;
   float: left;
   font-size: 2.62em;
-  line-height: 1em;
+  line-height: 1.5em;
   margin-right: 2%;
 }
 .event-item .event-content {
