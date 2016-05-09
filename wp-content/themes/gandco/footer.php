@@ -58,7 +58,7 @@
 
 					<ul>
 
-						<li><a href="#"><span class="icon icon-location-icon"></span> Directions</a></li>
+						<li><a href="https://maps.google.com?daddr=3650+Toone+Street+Baltimore+MD+21224"><span class="icon icon-location-icon"></span> Directions</a></li>
 
 						<li><a href="<?php echo home_url(); ?>/contact-us"><span class="icon icon-phone-icon"></span> Contact Us</a></li>
 
