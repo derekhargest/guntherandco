@@ -1165,6 +1165,7 @@ input, textarea {
   width: 100%;
   text-align: center;
   font-size: 1.35em;
+  border-radius: 0;
 }
 .footer-content.updated .button {
   margin-top: 1.2em;
