@@ -1,7 +1,5 @@
 <?php
-/**
- * The template for displaying all single posts and attachments
- *
+/*
  * @package Gunther & Co
  * @subpackage gandco
  * @since 2016
@@ -13,6 +11,16 @@ get_header(); ?>
 
 	<main id="main" class="site-main" role="main">
 
+		<?php get_template_part( 'template-parts/content-banner' ); ?>
+
+		<div id="content-block">
+
+			<div class="cta-section">
+
+				<a href="http://www.opentable.com/single.aspx?rid=212593&restref=212593"><span>Make Reservations Today</span></a>
+
+			</div>
+
 			<div class="container">
 
 			<?php
@@ -22,7 +30,6 @@ get_header(); ?>
 				get_template_part( 'template-parts/content', 'single' );
 
 			endwhile;
-
 			?>
 
 		</div>

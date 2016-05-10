@@ -128,6 +128,10 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript">
+	$.stellar();
+</script>
+
 </body>
 
 </html>

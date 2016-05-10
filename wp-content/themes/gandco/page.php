@@ -7,21 +7,19 @@
 
 get_header(); ?>
 
-<?php if (get_field('page_main_banner')): ?>
-
-	<?php get_template_part( 'template-parts/content-banner' ); ?>
-
-<?php endif ?>
-
-<div class="cta-section">
-
-	<a href="http://www.opentable.com/single.aspx?rid=212593&restref=212593"><span>Make Reservations Today</span></a>
-
-</div>
-
 <div id="primary" class="content-area">
 
 	<main id="main" class="site-main" role="main">
+
+		<?php get_template_part( 'template-parts/content-banner' ); ?>
+
+		<div id="content-block">
+
+		<div class="cta-section">
+
+			<a href="http://www.opentable.com/single.aspx?rid=212593&restref=212593"><span>Make Reservations Today</span></a>
+
+		</div>
 
 		<?php
 
@@ -73,5 +71,7 @@ get_header(); ?>
 		</div>
 
 		<?php endif; ?>
+
+	</div>
 
 <?php get_footer(); ?>

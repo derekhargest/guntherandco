@@ -38,6 +38,7 @@
 
 
  	}
+	
 	add_action( 'widgets_init', 'tcf_widgets_init' );
 
 	add_theme_support( 'post-thumbnails' );
