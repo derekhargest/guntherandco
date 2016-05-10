@@ -232,7 +232,7 @@ small {
 }
 @media (max-width: 1370px) {
   .main-navigation ul li {
-    padding-top: 4.5% !important;
+    padding-top: 4.2% !important;
   }
 }
 @media (min-width: 1140px) {
@@ -1037,7 +1037,7 @@ input, textarea {
   }
 
   .main-navigation ul li a {
-    font-size: 1.14em;
+    font-size: 1.10em;
   }
 }
 @media (min-width: 468px) {
@@ -1046,7 +1046,7 @@ input, textarea {
     margin: 0 !important;
   }
 }
-@media (min-width: 1140px) and (max-width: 1300px) {
+@media (min-width: 1140px) and (max-width: 1279px) {
   .main-navigation {
     width: 88.216%;
   }
