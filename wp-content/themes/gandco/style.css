@@ -597,9 +597,8 @@ small {
     float: none;
     margin: 0 auto;
     margin-bottom: 0;
-    padding: 0;
     margin-top: 13.333em;
-    margin-bottom: 5em;
+    padding-bottom: 5em;
   }
   .content-container:after {
     content: " ";
@@ -620,7 +619,6 @@ small {
 }
 @media (min-width: 1260px) {
   .content-container {
-    padding: 0;
     width: 100%;
   }
 }
