@@ -286,6 +286,7 @@ small {
   padding: .5em;
   background: transparent;
   border: 1px solid #fff;
+  border-radius: 0;
 }
 .button span {
   margin: 0 auto;
