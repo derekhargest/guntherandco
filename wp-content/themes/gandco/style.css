@@ -1416,6 +1416,7 @@ input, textarea {
   width: 100%;
   z-index: 10;
   margin-top: 2em;
+  background-attachment: fixed;
 }
 .banner-overlay h2, .banner-overlay h3, .banner-overlay-notitle h2, .banner-overlay-notitle h3 {
   text-align: center;
