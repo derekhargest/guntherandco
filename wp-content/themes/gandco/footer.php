@@ -8,19 +8,19 @@
 
 				<h4>Hours of Operation</h4>
 
-				<p>M - TH 11:30 - 11:30</p>
+				<p>M - TH 11:30 AM - 11:30 PM</p>
 
 
 
-				<p>Friday 11:30 - 12:30</p>
+				<p>Friday 11:30 AM - 12:30 PM</p>
 
 
 
-				<p>Saturday 11 - 12:30</p>
+				<p>Saturday 11 AM - 12:30 PM</p>
 
 
 
-				<p>Sunday 11:00 - 10:00</p>
+				<p>Sunday 11:00 AM - 10:00 PM</p>
 
 
 
@@ -128,53 +128,6 @@
 
 <?php wp_footer(); ?>
 
-<script type="text/javascript">
-
-var isOpera = !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-    // Opera 8.0+ (UA detection to detect Blink/v8-powered Opera)
-    var isFirefox = typeof InstallTrigger !== 'undefined';   // Firefox 1.0+
-    var isSafari = Object.prototype.toString.call(window.HTMLElement).indexOf('Constructor') > 0;
-    // At least Safari 3+: "[object HTMLElementConstructor]"
-    var isChrome = !!window.chrome && !isOpera;              // Chrome 1+
-    var isIE = /*@cc_on!@*/false || !!document.documentMode; // At least IE6
-
-$(document).ready(function() {
-	if(!isSafari || !isIE)
-{
-    react_to_window();
-}
-
-});
-
-//      only activate stellar for window widths above or equal to 1024
-var stellarActivated = false;
-
-$(window).resize(function() {
-	if(!isSafari || !isIE)
-{
-		react_to_window();
-}
-});
-
-function react_to_window() {
-		if ($(window).width() <= 700) {
-				if (stellarActivated == true) {
-						$(window).data('plugin_stellar').destroy();
-						stellarActivated = false;
-				}
-		} else {
-				if (stellarActivated == false) {
-
-						$.stellar({
-							 horizontalScrolling: false
-					 });
-
-						$(window).data('plugin_stellar').init();
-						stellarActivated = true;
-				}
-		}
-}
-</script>
 
 </body>
 
