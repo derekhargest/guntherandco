@@ -870,7 +870,7 @@ input, textarea {
   width: 14.285%;
   text-align: center;
   line-height: 1rem;
-  padding-top: 3.85%;
+  padding-top: 3.80%;
   padding-bottom: 2.5%;
   height: 3.5rem;
 }
@@ -1015,6 +1015,7 @@ input, textarea {
     margin-top: 1em !important;
     min-width: 210px;
     padding-bottom: 1.5em;
+    padding-top: 2.25em;
   }
 
   .main-navigation ul.sub-menu li a {

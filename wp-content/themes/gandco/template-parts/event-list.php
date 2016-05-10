@@ -14,7 +14,7 @@
   <div class="event-item">
 
     <div class="event-image">
-      <img src="<?php echo esc_url( get_template_directory_uri() ) ?>/images/event-image.jpg" alt="<?php the_title(); ?> event image" />
+			<?php the_post_thumbnail( 'full' ); ?>
     </div>
 
     <div class="event-content">
