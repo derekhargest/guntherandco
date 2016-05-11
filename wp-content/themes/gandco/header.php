@@ -33,7 +33,7 @@
 		var overlay = null;
 		var map;
 		  function initialize() {
-		    var myLatLng = {lat: 39.279024, lng: -76.565706};
+		    var myLatLng = {lat: 39.278537, lng: -76.566091};
 
 		    var mapCanvas = document.getElementById('map');
 		    var mapOptions = {
@@ -79,7 +79,7 @@
 			google.maps.event.addDomListener(window, "resize", function() {
 				if ((window.innerWidth < 710))  {
 					var center = map.getCenter();
-					var myLatLng = {lat: 39.279024, lng: -76.565706};
+					var myLatLng = {lat: 39.278537, lng: -76.566091};
 	 			 google.maps.event.trigger(map, "resize");
 	 			 map.setCenter(myLatLng);
     	}
