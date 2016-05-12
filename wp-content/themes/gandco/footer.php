@@ -16,7 +16,7 @@
 
 
 
-				<p>Saturday 11 AM - 12:30 PM</p>
+				<p>Saturday 11:00 AM - 12:30 PM</p>
 
 
 
