@@ -12,11 +12,11 @@
 
 
 
-				<p>Friday 11:30 AM - 12:30 PM</p>
+				<p>Friday 11:30 AM - 12:30 AM</p>
 
 
 
-				<p>Saturday 11:00 AM - 12:30 PM</p>
+				<p>Saturday 11:00 AM - 12:30 AM</p>
 
 
 
