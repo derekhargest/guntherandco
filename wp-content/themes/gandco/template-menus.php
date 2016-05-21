@@ -50,7 +50,7 @@ get_header(); ?>
 
 					<?php if (get_field('lunch_menu')): ?>
 
-						<a href="<?php echo the_field('lunch_menu'); ?>" class="menu-link">Lunch<span class="icon icon-download"></span><span class="menu-hours">Monday – Saturday 11:30 – 2:30</span></a>
+						<a href="<?php echo the_field('lunch_menu'); ?>" class="menu-link">Lunch<span class="icon icon-download"></span><span class="menu-hours">Monday – Friday 11:30 – 2:30</span></a>
 
 					<?php endif; ?>
 
